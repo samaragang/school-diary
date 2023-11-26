@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7065380A2AD13A700009163A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 706538092AD13A700009163A /* SnapKit */; };
+		7065380C2AD13A700009163A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7065380B2AD13A700009163A /* SnapKit-Dynamic */; };
+		706538112AD13A9B0009163A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706538102AD13A9B0009163A /* SignViewController.swift */; };
+		706538132AD13AA20009163A /* SignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706538122AD13AA20009163A /* SignPresenter.swift */; };
+		706538162AD13AD40009163A /* SchoolDiaryUIComponents in Resources */ = {isa = PBXBuildFile; fileRef = 706538152AD13AD40009163A /* SchoolDiaryUIComponents */; };
+		706538192AD13AE10009163A /* SchoolDiaryUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 706538182AD13AE10009163A /* SchoolDiaryUIComponents */; };
+		707FFB032B1137CD0079B3CF /* ResponseUserBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */; };
+		707FFB072B1138400079B3CF /* ResponseTeacherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */; };
+		707FFB092B1138DA0079B3CF /* PupilTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */; };
+		707FFB0C2B1139180079B3CF /* PupilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0B2B1139180079B3CF /* PupilViewController.swift */; };
+		707FFB0E2B113ADD0079B3CF /* LocalTeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */; };
+		707FFB102B113CE70079B3CF /* PupilPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */; };
+		707FFB132B11400A0079B3CF /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB122B11400A0079B3CF /* TimetableViewController.swift */; };
+		707FFB172B11436A0079B3CF /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */; };
+		707FFB192B1144880079B3CF /* UICollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */; };
+		707FFB1B2B1144970079B3CF /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */; };
+		707FFB1D2B1145210079B3CF /* TimetableDaysType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */; };
+		707FFB1F2B1145F90079B3CF /* TimetablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */; };
+		707FFB222B1147F50079B3CF /* WeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB212B1147F50079B3CF /* WeekDaysView.swift */; };
+		707FFB242B114B070079B3CF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB232B114B070079B3CF /* Date+Ext.swift */; };
+		7088C0FB2AD1407D004D9A50 /* LuckiestGuy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */; };
+		7088C0FF2AD140BD004D9A50 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */; };
+		7088C1022AD143B2004D9A50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1012AD143B2004D9A50 /* Constants.swift */; };
+		7088C1072AD14897004D9A50 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1062AD14897004D9A50 /* MainCoordinator.swift */; };
+		7088C1092AD19484004D9A50 /* SignControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1082AD19484004D9A50 /* SignControllerType.swift */; };
+		70C0BECF2AF7B3C80057D6F3 /* FriendlyURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */; };
+		70C0BED12AF7B3D50057D6F3 /* SchoolsDiaryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */; };
+		70C0BED42AF7BAFB0057D6F3 /* ResponseSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */; };
+		70C0BED62AF7BB3C0057D6F3 /* ResponseUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */; };
+		70C0BED82AF7BB730057D6F3 /* ResponseAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */; };
+		70C0BEDA2AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */; };
+		70D0D2D52AD13A0F00CF5256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */; };
+		70D0D2D72AD13A0F00CF5256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */; };
+		70D0D2DC2AD13A0F00CF5256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */; };
+		70D0D2DE2AD13A1000CF5256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */; };
+		70D0D2E12AD13A1000CF5256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */; };
+		70DB3A532AF7C33B003B3E3F /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A522AF7C33B003B3E3F /* RoleType.swift */; };
+		70DB3A572AF7C54E003B3E3F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 70DB3A562AF7C54E003B3E3F /* Realm */; };
+		70DB3A592AF7C54E003B3E3F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70DB3A582AF7C54E003B3E3F /* RealmSwift */; };
+		70DB3A5C2AF7C576003B3E3F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */; };
+		70DB3A5F2AF7C59C003B3E3F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */; };
+		70DB3A622AF7C5D4003B3E3F /* LocalUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */; };
+		70DB3A652AF7C6B9003B3E3F /* BaseKeychainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */; };
+		70DB3A682AF7C6EA003B3E3F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A672AF7C6EA003B3E3F /* Credentials.swift */; };
+		70DB3A6A2AF7C70C003B3E3F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A692AF7C70C003B3E3F /* Account.swift */; };
+		70DB3A6D2AF7CBCE003B3E3F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */; };
+		70DB3A712AF7CBF4003B3E3F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */; };
+		70DB3A732AF7D20D003B3E3F /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */; };
+		70DB3A762AF7D397003B3E3F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */; };
+		70DB3A782AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */; };
+		70DB3A7C2AF7D749003B3E3F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */; };
+		70DB3A7F2AF7E819003B3E3F /* TeacherTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */; };
+		70DB3A822AF7E88F003B3E3F /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */; };
+		70DB3A852AF7EBD2003B3E3F /* TeacherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		706538102AD13A9B0009163A /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		706538122AD13AA20009163A /* SignPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPresenter.swift; sourceTree = "<group>"; };
+		706538152AD13AD40009163A /* SchoolDiaryUIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SchoolDiaryUIComponents; sourceTree = "<group>"; };
+		707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserBaseModel.swift; sourceTree = "<group>"; };
+		707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTeacherInfoModel.swift; sourceTree = "<group>"; };
+		707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilTabBarController.swift; sourceTree = "<group>"; };
+		707FFB0B2B1139180079B3CF /* PupilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilViewController.swift; sourceTree = "<group>"; };
+		707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTeacherModel.swift; sourceTree = "<group>"; };
+		707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilPresenter.swift; sourceTree = "<group>"; };
+		707FFB122B11400A0079B3CF /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
+		707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
+		707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableDaysType.swift; sourceTree = "<group>"; };
+		707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetablePresenter.swift; sourceTree = "<group>"; };
+		707FFB212B1147F50079B3CF /* WeekDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysView.swift; sourceTree = "<group>"; };
+		707FFB232B114B070079B3CF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LuckiestGuy-Regular.ttf"; path = "../../../../../../../Downloads/Luckiest_Guy/LuckiestGuy-Regular.ttf"; sourceTree = "<group>"; };
+		7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		7088C1012AD143B2004D9A50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7088C1062AD14897004D9A50 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		7088C1082AD19484004D9A50 /* SignControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignControllerType.swift; sourceTree = "<group>"; };
+		70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryApi.swift; sourceTree = "<group>"; };
+		70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSignInModel.swift; sourceTree = "<group>"; };
+		70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserModel.swift; sourceTree = "<group>"; };
+		70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAccessTokenModel.swift; sourceTree = "<group>"; };
+		70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryProvider.swift; sourceTree = "<group>"; };
+		70D0D2D12AD13A0F00CF5256 /* School Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70D0D2DB2AD13A0F00CF5256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70D0D2E02AD13A1000CF5256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70D0D2E22AD13A1000CF5256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70DB3A522AF7C33B003B3E3F /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
+		70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserModel.swift; sourceTree = "<group>"; };
+		70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeychainModel.swift; sourceTree = "<group>"; };
+		70DB3A672AF7C6EA003B3E3F /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		70DB3A692AF7C70C003B3E3F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsTableHeaderView.swift; sourceTree = "<group>"; };
+		70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTabBarController.swift; sourceTree = "<group>"; };
+		70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D0D2CE2AD13A0F00CF5256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DB3A592AF7C54E003B3E3F /* RealmSwift in Frameworks */,
+				706538192AD13AE10009163A /* SchoolDiaryUIComponents in Frameworks */,
+				7065380A2AD13A700009163A /* SnapKit in Frameworks */,
+				70C0BECF2AF7B3C80057D6F3 /* FriendlyURLSession in Frameworks */,
+				7065380C2AD13A700009163A /* SnapKit-Dynamic in Frameworks */,
+				70DB3A572AF7C54E003B3E3F /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7065380D2AD13A820009163A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB142B1143590079B3CF /* CollectionViewCells */,
+				70DB3A7D2AF7E809003B3E3F /* TabBarControllers */,
+				70DB3A7A2AF7D73E003B3E3F /* TableViewCells */,
+				70DB3A6E2AF7CBE9003B3E3F /* Views */,
+				7065380E2AD13A880009163A /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7065380E2AD13A880009163A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB112B1140020079B3CF /* TimetableViewController */,
+				707FFB0A2B11390D0079B3CF /* PupilViewController */,
+				70DB3A802AF7E885003B3E3F /* TeacherViewController */,
+				70DB3A742AF7D390003B3E3F /* SettingsViewController */,
+				70DB3A6B2AF7CBC5003B3E3F /* UserViewController */,
+				7065380F2AD13A910009163A /* SignViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7065380F2AD13A910009163A /* SignViewController */ = {
+			isa = PBXGroup;
+			children = (
+				706538102AD13A9B0009163A /* SignViewController.swift */,
+				706538122AD13AA20009163A /* SignPresenter.swift */,
+				7088C1082AD19484004D9A50 /* SignControllerType.swift */,
+			);
+			path = SignViewController;
+			sourceTree = "<group>";
+		};
+		706538142AD13AAE0009163A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				706538152AD13AD40009163A /* SchoolDiaryUIComponents */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		707FFB0A2B11390D0079B3CF /* PupilViewController */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB0B2B1139180079B3CF /* PupilViewController.swift */,
+				707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */,
+			);
+			path = PupilViewController;
+			sourceTree = "<group>";
+		};
+		707FFB112B1140020079B3CF /* TimetableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB122B11400A0079B3CF /* TimetableViewController.swift */,
+				707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */,
+			);
+			path = TimetableViewController;
+			sourceTree = "<group>";
+		};
+		707FFB142B1143590079B3CF /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB152B1143630079B3CF /* TimetableCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		707FFB152B1143630079B3CF /* TimetableCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */,
+			);
+			path = TimetableCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		707FFB202B1147E60079B3CF /* WeekDaysView */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB212B1147F50079B3CF /* WeekDaysView.swift */,
+			);
+			path = WeekDaysView;
+			sourceTree = "<group>";
+		};
+		7088C0F92AD13F1B004D9A50 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7088C0FC2AD140B4004D9A50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7088C0FD2AD140B7004D9A50 /* UIKit+Ext */,
+				707FFB232B114B070079B3CF /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7088C0FD2AD140B7004D9A50 /* UIKit+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */,
+				70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */,
+				707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */,
+				707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */,
+			);
+			path = "UIKit+Ext";
+			sourceTree = "<group>";
+		};
+		7088C1002AD143A3004D9A50 /* HelpfulFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7088C1012AD143B2004D9A50 /* Constants.swift */,
+			);
+			path = HelpfulFiles;
+			sourceTree = "<group>";
+		};
+		7088C1052AD1488E004D9A50 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7088C1062AD14897004D9A50 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		70C0BECC2AF7B3B30057D6F3 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				70C0BED22AF7B50A0057D6F3 /* Models */,
+				70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */,
+				70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		70C0BED22AF7B50A0057D6F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */,
+				70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */,
+				70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */,
+				707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */,
+				707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70D0D2C82AD13A0F00CF5256 = {
+			isa = PBXGroup;
+			children = (
+				70D0D2D32AD13A0F00CF5256 /* School Diary */,
+				70D0D2D22AD13A0F00CF5256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70D0D2D22AD13A0F00CF5256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D0D2D12AD13A0F00CF5256 /* School Diary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D0D2D32AD13A0F00CF5256 /* School Diary */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A662AF7C6E5003B3E3F /* Models */,
+				70DB3A632AF7C6B2003B3E3F /* BaseItems */,
+				70DB3A5D2AF7C596003B3E3F /* Managers */,
+				70DB3A5A2AF7C555003B3E3F /* Realm */,
+				70DB3A512AF7C333003B3E3F /* Enums */,
+				70C0BECC2AF7B3B30057D6F3 /* Api */,
+				7088C1052AD1488E004D9A50 /* Coordinator */,
+				7088C1002AD143A3004D9A50 /* HelpfulFiles */,
+				7088C0FC2AD140B4004D9A50 /* Extensions */,
+				7088C0F92AD13F1B004D9A50 /* Fonts */,
+				706538142AD13AAE0009163A /* Packages */,
+				7065380D2AD13A820009163A /* UI */,
+				70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */,
+				70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */,
+				70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */,
+				70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */,
+				70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */,
+				70D0D2E22AD13A1000CF5256 /* Info.plist */,
+			);
+			path = "School Diary";
+			sourceTree = "<group>";
+		};
+		70DB3A512AF7C333003B3E3F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A522AF7C33B003B3E3F /* RoleType.swift */,
+				707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		70DB3A5A2AF7C555003B3E3F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A602AF7C5CF003B3E3F /* Models */,
+				70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		70DB3A5D2AF7C596003B3E3F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		70DB3A602AF7C5CF003B3E3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */,
+				707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70DB3A632AF7C6B2003B3E3F /* BaseItems */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */,
+			);
+			path = BaseItems;
+			sourceTree = "<group>";
+		};
+		70DB3A662AF7C6E5003B3E3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A672AF7C6EA003B3E3F /* Credentials.swift */,
+				70DB3A692AF7C70C003B3E3F /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70DB3A6B2AF7CBC5003B3E3F /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		70DB3A6E2AF7CBE9003B3E3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				707FFB202B1147E60079B3CF /* WeekDaysView */,
+				70DB3A832AF7EBC9003B3E3F /* TeacherInfoView */,
+				70DB3A792AF7D735003B3E3F /* UserSettingsTableHeaderView */,
+				70DB3A6F2AF7CBED003B3E3F /* UserInfoView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70DB3A6F2AF7CBED003B3E3F /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */,
+			);
+			path = UserInfoView;
+			sourceTree = "<group>";
+		};
+		70DB3A742AF7D390003B3E3F /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		70DB3A792AF7D735003B3E3F /* UserSettingsTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */,
+			);
+			path = UserSettingsTableHeaderView;
+			sourceTree = "<group>";
+		};
+		70DB3A7A2AF7D73E003B3E3F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		70DB3A7D2AF7E809003B3E3F /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */,
+				707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		70DB3A802AF7E885003B3E3F /* TeacherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */,
+			);
+			path = TeacherViewController;
+			sourceTree = "<group>";
+		};
+		70DB3A832AF7EBC9003B3E3F /* TeacherInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */,
+			);
+			path = TeacherInfoView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D0D2D02AD13A0F00CF5256 /* School Diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D0D2E52AD13A1000CF5256 /* Build configuration list for PBXNativeTarget "School Diary" */;
+			buildPhases = (
+				70D0D2CD2AD13A0F00CF5256 /* Sources */,
+				70D0D2CE2AD13A0F00CF5256 /* Frameworks */,
+				70D0D2CF2AD13A0F00CF5256 /* Resources */,
+				7088C0F82AD13BFA004D9A50 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "School Diary";
+			packageProductDependencies = (
+				706538092AD13A700009163A /* SnapKit */,
+				7065380B2AD13A700009163A /* SnapKit-Dynamic */,
+				706538182AD13AE10009163A /* SchoolDiaryUIComponents */,
+				70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */,
+				70DB3A562AF7C54E003B3E3F /* Realm */,
+				70DB3A582AF7C54E003B3E3F /* RealmSwift */,
+			);
+			productName = "School Diary";
+			productReference = 70D0D2D12AD13A0F00CF5256 /* School Diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D0D2C92AD13A0F00CF5256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					70D0D2D02AD13A0F00CF5256 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 70D0D2CC2AD13A0F00CF5256 /* Build configuration list for PBXProject "School Diary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70D0D2C82AD13A0F00CF5256;
+			packageReferences = (
+				706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				706538172AD13AE10009163A /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */,
+				70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */,
+				70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 70D0D2D22AD13A0F00CF5256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D0D2D02AD13A0F00CF5256 /* School Diary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D0D2CF2AD13A0F00CF5256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706538162AD13AD40009163A /* SchoolDiaryUIComponents in Resources */,
+				70D0D2E12AD13A1000CF5256 /* LaunchScreen.storyboard in Resources */,
+				70D0D2DE2AD13A1000CF5256 /* Assets.xcassets in Resources */,
+				7088C0FB2AD1407D004D9A50 /* LuckiestGuy-Regular.ttf in Resources */,
+				70D0D2DC2AD13A0F00CF5256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7088C0F82AD13BFA004D9A50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D0D2CD2AD13A0F00CF5256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C0BED82AF7BB730057D6F3 /* ResponseAccessTokenModel.swift in Sources */,
+				707FFB0C2B1139180079B3CF /* PupilViewController.swift in Sources */,
+				707FFB0E2B113ADD0079B3CF /* LocalTeacherModel.swift in Sources */,
+				707FFB102B113CE70079B3CF /* PupilPresenter.swift in Sources */,
+				70D0D2D52AD13A0F00CF5256 /* AppDelegate.swift in Sources */,
+				707FFB242B114B070079B3CF /* Date+Ext.swift in Sources */,
+				70DB3A652AF7C6B9003B3E3F /* BaseKeychainModel.swift in Sources */,
+				707FFB192B1144880079B3CF /* UICollectionViewCell+Ext.swift in Sources */,
+				70DB3A5C2AF7C576003B3E3F /* RealmManager.swift in Sources */,
+				7088C1072AD14897004D9A50 /* MainCoordinator.swift in Sources */,
+				70DB3A822AF7E88F003B3E3F /* TeacherViewController.swift in Sources */,
+				707FFB072B1138400079B3CF /* ResponseTeacherInfoModel.swift in Sources */,
+				70DB3A782AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift in Sources */,
+				707FFB172B11436A0079B3CF /* TimetableCollectionViewCell.swift in Sources */,
+				70DB3A732AF7D20D003B3E3F /* UIViewController+Ext.swift in Sources */,
+				70DB3A622AF7C5D4003B3E3F /* LocalUserModel.swift in Sources */,
+				70DB3A852AF7EBD2003B3E3F /* TeacherInfoView.swift in Sources */,
+				707FFB1F2B1145F90079B3CF /* TimetablePresenter.swift in Sources */,
+				7088C1092AD19484004D9A50 /* SignControllerType.swift in Sources */,
+				70DB3A6D2AF7CBCE003B3E3F /* UserViewController.swift in Sources */,
+				706538112AD13A9B0009163A /* SignViewController.swift in Sources */,
+				70DB3A712AF7CBF4003B3E3F /* UserInfoView.swift in Sources */,
+				707FFB1D2B1145210079B3CF /* TimetableDaysType.swift in Sources */,
+				70DB3A532AF7C33B003B3E3F /* RoleType.swift in Sources */,
+				707FFB092B1138DA0079B3CF /* PupilTabBarController.swift in Sources */,
+				70C0BED42AF7BAFB0057D6F3 /* ResponseSignInModel.swift in Sources */,
+				70C0BED12AF7B3D50057D6F3 /* SchoolsDiaryApi.swift in Sources */,
+				70D0D2D72AD13A0F00CF5256 /* SceneDelegate.swift in Sources */,
+				706538132AD13AA20009163A /* SignPresenter.swift in Sources */,
+				70DB3A682AF7C6EA003B3E3F /* Credentials.swift in Sources */,
+				707FFB222B1147F50079B3CF /* WeekDaysView.swift in Sources */,
+				70DB3A7C2AF7D749003B3E3F /* SettingsTableViewCell.swift in Sources */,
+				70C0BEDA2AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift in Sources */,
+				70DB3A6A2AF7C70C003B3E3F /* Account.swift in Sources */,
+				70DB3A5F2AF7C59C003B3E3F /* SettingsManager.swift in Sources */,
+				70C0BED62AF7BB3C0057D6F3 /* ResponseUserModel.swift in Sources */,
+				7088C0FF2AD140BD004D9A50 /* UIFont+Ext.swift in Sources */,
+				70DB3A7F2AF7E819003B3E3F /* TeacherTabBarController.swift in Sources */,
+				7088C1022AD143B2004D9A50 /* Constants.swift in Sources */,
+				707FFB032B1137CD0079B3CF /* ResponseUserBaseModel.swift in Sources */,
+				707FFB132B11400A0079B3CF /* TimetableViewController.swift in Sources */,
+				707FFB1B2B1144970079B3CF /* UICollectionView+Ext.swift in Sources */,
+				70DB3A762AF7D397003B3E3F /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D0D2DB2AD13A0F00CF5256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D0D2E02AD13A1000CF5256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D0D2E32AD13A1000CF5256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70D0D2E42AD13A1000CF5256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70D0D2E62AD13A1000CF5256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SYA5J8W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "School Diary/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.kefaxoo.School-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70D0D2E72AD13A1000CF5256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SYA5J8W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "School Diary/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.kefaxoo.School-Diary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D0D2CC2AD13A0F00CF5256 /* Build configuration list for PBXProject "School Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D0D2E32AD13A1000CF5256 /* Debug */,
+				70D0D2E42AD13A1000CF5256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D0D2E52AD13A1000CF5256 /* Build configuration list for PBXNativeTarget "School Diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D0D2E62AD13A1000CF5256 /* Debug */,
+				70D0D2E72AD13A1000CF5256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		706538172AD13AE10009163A /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "School Diary/Packages/SchoolDiaryUIComponents";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+		70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kefaxoo/friendly-urlsession";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 10.44.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		706538092AD13A700009163A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7065380B2AD13A700009163A /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		706538182AD13AE10009163A /* SchoolDiaryUIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchoolDiaryUIComponents;
+		};
+		70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */;
+			productName = FriendlyURLSession;
+		};
+		70DB3A562AF7C54E003B3E3F /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		70DB3A582AF7C54E003B3E3F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 70D0D2C92AD13A0F00CF5256 /* Project object */;
+}
