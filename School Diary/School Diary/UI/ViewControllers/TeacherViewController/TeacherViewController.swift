@@ -17,7 +17,7 @@ final class TeacherViewController: UserViewController {
         return button
     }()
     
-    override init() {
+    init() {
         super.init()
     }
     

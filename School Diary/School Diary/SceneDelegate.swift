@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = MainCoordinator.shared.initialController
         window?.makeKeyAndVisible()
+        UIApplication.shared.keyWindow?.overrideUserInterfaceStyle = .light
         MainCoordinator.shared.window = window
     }
 

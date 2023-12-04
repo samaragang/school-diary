@@ -15,6 +15,10 @@ class ResponseUserBaseModel: Decodable {
     let classId    : Int
     let phoneNumber: String
     
+    var nameAndSurname: String {
+        return "\(name) \(surname)"
+    }
+    
     enum CodingKeys: CodingKey {
         case name
         case surname

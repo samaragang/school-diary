@@ -47,4 +47,33 @@ extension Date {
     static var nextWeekForLabel: String {
         return self.getWeekForLabel(for: self.daysInNextWeek)
     }
+    
+    static func day(_ day: TimetableDaysType, isCurrentWeek: Bool) -> Date {
+        let days: [Date]
+        if isCurrentWeek {
+            days = self.daysInCurrentWeek
+        } else {
+            days = self.daysInNextWeek
+        }
+        
+        return days[day.rawValue - 1]
+    }
+    
+    func toFormat(_ dateFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateFormat
+        return dateFormatter.string(from: self)
+    }
+    
+    var ddMMFormat: String {
+        return self.toFormat("dd.MM")
+    }
+    
+    var ddMMyyyyFormat: String {
+        return self.toFormat("dd.MM.yyyy")
+    }
+    
+    var ddMMyyFormat: String {
+        return self.toFormat("dd/MM/yy")
+    }
 }

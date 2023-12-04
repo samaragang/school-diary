@@ -143,14 +143,10 @@ fileprivate extension SignViewController {
 // MARK: - SignViewControllerPresenter
 extension SignViewController: SignViewControllerProtocol {
     var email: String? {
-        get {
-            return self.emailTextField.text
-        }
+        return self.emailTextField.text
     }
     
     var password: String? {
-        get {
-            return self.passwordTextField.text
-        }
+        return self.passwordTextField.text
     }
 }

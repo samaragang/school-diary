@@ -19,8 +19,12 @@ final class UserInfoView: BaseUIView {
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18, weight: .medium)
-        if let currentUser = RealmManager<LocalUserModel>().read().first {
-            label.text = currentUser.nameAndSurname
+        if self.viewType == .currentUser {
+            if let currentUser = RealmManager<LocalUserModel>().read().first {
+                label.text = currentUser.nameAndSurname
+            }
+        } else {
+            label.text = self.userInfo?.nameAndSurname
         }
         
         return label
@@ -42,8 +46,17 @@ final class UserInfoView: BaseUIView {
         return stackView
     }()
     
-    convenience init() {
-        self.init(frame: CGRect(origin: .zero, size: CGSize(width: 302, height: 138)))
+    private var viewType: UserViewType = .currentUser
+    private var userInfo: ResponseUserBaseModel?
+    
+    init(viewType: UserViewType = .currentUser, userInfo: ResponseUserBaseModel? = nil) {
+        self.viewType = viewType
+        self.userInfo = userInfo
+        super.init(frame: CGRect(origin: .zero, size: CGSize(width: 302, height: 138)))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

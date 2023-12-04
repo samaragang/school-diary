@@ -2,17 +2,14 @@
 //  AppDelegate.swift
 //  School Diary
 //
-//  Created by Bahdan Piatrouski on 7.10.23.
+//  Created by Bahdan Piatrouski on 25.11.23.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    ) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

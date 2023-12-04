@@ -8,21 +8,36 @@
 import UIKit
 import SchoolDiaryUIComponents
 
+enum UserViewType {
+    case currentUser
+    case pupilInfo
+}
+
 class UserViewController: BaseUIViewController {
     private lazy var userInfoView: UserInfoView = {
-        let userInfoView = UserInfoView()
+        let userInfoView = UserInfoView(viewType: self.controllerType, userInfo: self.userInfo)
         return userInfoView
     }()
     
     private lazy var qrImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = Constants.Images.userExampleQR.image
+        if self.controllerType == .currentUser {
+            imageView.setImage(from: "\(Constants.baseApiUrl)/user/qr", withHeader: SettingsManager.shared.account.accessToken)
+        } else if let pupilId = userInfo?.userId {
+            imageView.setImage(from: "\(Constants.baseApiUrl)/user/pupil/qr?user_id=\(pupilId)")
+        }
+        
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 16
         return imageView
     }()
     
-    init() {
+    private let controllerType: UserViewType
+    private let userInfo: ResponseUserBaseModel?
+    
+    init(controllerType: UserViewType = .currentUser, userInfo: ResponseUserBaseModel? = nil) {
+        self.controllerType = controllerType
+        self.userInfo = userInfo
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -36,6 +51,8 @@ class UserViewController: BaseUIViewController {
 extension UserViewController {
     override func setupInterface() {
         super.setupInterface()
+        guard self.controllerType == .currentUser else { return }
+        
         self.setupNavigationController()
     }
     
@@ -58,6 +75,8 @@ extension UserViewController {
     }
     
     private func setupNavigationController() {
+        guard self.controllerType == .currentUser else { return }
+        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: Constants.Images.settingsIcon.image,
             style: .done,

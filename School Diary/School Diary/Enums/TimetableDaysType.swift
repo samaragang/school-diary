@@ -7,13 +7,13 @@
 
 import UIKit
 
-enum TimetableDaysType: CaseIterable {
-    case monday
-    case tuesday
-    case wednesday
-    case thursday
-    case friday
-    case saturday
+enum TimetableDaysType: Int, CaseIterable {
+    case monday = 1
+    case tuesday = 2
+    case wednesday = 3
+    case thursday = 4
+    case friday = 5
+    case saturday = 6
     
     var title: String {
         switch self {
@@ -29,6 +29,23 @@ enum TimetableDaysType: CaseIterable {
                 return "ПТ"
             case .saturday:
                 return "СБ"
+        }
+    }
+    
+    var fullTitle: String {
+        switch self {
+            case .monday:
+                return "Понедельник"
+            case .tuesday:
+                return "Вторник"
+            case .wednesday:
+                return "Среда"
+            case .thursday:
+                return "Четверг"
+            case .friday:
+                return "Пятница"
+            case .saturday:
+                return "Суббота"
         }
     }
     

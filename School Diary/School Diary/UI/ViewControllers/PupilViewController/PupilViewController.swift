@@ -17,7 +17,7 @@ final class PupilViewController: UserViewController {
     
     private let presenter: PupilPresenterProtocol
     
-    override init() {
+    init() {
         self.presenter = PupilPresenter()
         super.init()
         self.presenter.setView(self)

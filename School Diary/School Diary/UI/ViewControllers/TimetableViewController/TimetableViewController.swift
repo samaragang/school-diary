@@ -16,13 +16,6 @@ final class TimetableViewController: BaseUIViewController {
         return label
     }()
     
-    private lazy var menuNavigationButton: UIButton = {
-        let button = UIButton()
-        button.setImage(Constants.Images.menuNavigationButtonIcon.image, for: .normal)
-        button.tintColor = .label
-        return button
-    }()
-    
     private lazy var timetableCollectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.minimumLineSpacing = 16
@@ -33,18 +26,37 @@ final class TimetableViewController: BaseUIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.dataSource = self
         collectionView.register(TimetableCollectionViewCell.self)
+        collectionView.delegate = self
         collectionView.isScrollEnabled = false
         collectionView.backgroundColor = .clear
         return collectionView
     }()
     
-    private lazy var weekDaysView: WeekDaysView = {
-        let weekDaysView = WeekDaysView()
-        weekDaysView.weekDays = Date.currentWeekForLabel
+    private lazy var leftWeekNavigationButton = {
+        let button = UIButton()
+        button.setImage(Constants.Images.leftBottomNavigationButtonIcon.image, for: .normal)
+        button.isEnabled = false
+        button.tag = 1
+        button.addTarget(self, action: #selector(bottomNavigationButtonDidTap), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var weekDaysLabel: LabelInView = {
+        let weekDaysView = LabelInView()
+        weekDaysView.text = Date.currentWeekForLabel
         return weekDaysView
     }()
     
-    private let presenter: TimetableProtocol
+    private lazy var rightWeekNavigationButton = {
+        let button = UIButton()
+        button.setImage(Constants.Images.rightBottomNavigationButtonIcon.image, for: .normal)
+        button.tag = 2
+        button.addTarget(self, action: #selector(bottomNavigationButtonDidTap), for: .touchUpInside)
+        button.tintColor = .black
+        return button
+    }()
+    
+    private var presenter: TimetableProtocol
     
     init() {
         self.presenter = TimetablePresenter()
@@ -65,29 +77,53 @@ extension TimetableViewController {
     
     override func setupLayout() {
         self.view.addSubview(timetableCollectionView)
-        self.view.addSubview(weekDaysView)
+        self.view.addSubview(leftWeekNavigationButton)
+        self.view.addSubview(weekDaysLabel)
+        self.view.addSubview(rightWeekNavigationButton)
     }
     
     override func setupConstraints() {
         timetableCollectionView.snp.makeConstraints { make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(24)
             make.leading.trailing.equalToSuperview().inset(UIEdgeInsets(horizontal: 20))
-            make.bottom.equalTo(weekDaysView.snp.bottom).inset(24)
+            make.bottom.equalTo(weekDaysLabel.snp.bottom).inset(24)
         }
         
-        weekDaysView.snp.makeConstraints { make in
+        leftWeekNavigationButton.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(20)
+            make.height.equalTo(19)
+            make.width.equalTo(11)
+            make.centerY.equalTo(weekDaysLabel.snp.centerY)
+        }
+        
+        weekDaysLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(self.view.safeAreaLayoutGuide).offset(-33)
             make.height.equalTo(44)
             make.width.equalTo(167)
         }
+        
+        rightWeekNavigationButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-20)
+            make.height.equalTo(19)
+            make.width.equalTo(11)
+            make.centerY.equalTo(weekDaysLabel.snp.centerY)
+        }
     }
     
     private func setupNavigationController() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: self.navigationTitleLabel)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: self.menuNavigationButton)
-    
         self.navigationItem.leftItemsSupplementBackButton = true
+    }
+}
+
+// MARK: - Actions
+private extension TimetableViewController {
+    @objc func bottomNavigationButtonDidTap(_ sender: UIButton) {
+        leftWeekNavigationButton.isEnabled = sender.tag == 2
+        rightWeekNavigationButton.isEnabled = sender.tag == 1
+        self.presenter.isCurrentWeek = sender.tag == 1
+        self.weekDaysLabel.text = sender.tag == 1 ? Date.currentWeekForLabel : Date.nextWeekForLabel
     }
 }
 
@@ -102,4 +138,16 @@ extension TimetableViewController: UICollectionViewDataSource {
         (cell as? TimetableCollectionViewCell)?.configure(withDay: self.presenter.day(at: indexPath))
         return cell
     }
+}
+
+// MARK: - UICollectionViewDelegate
+extension TimetableViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.presenter.collectionView(didSelectAt: indexPath)
+    }
+}
+
+@available(iOS 17.0, *)
+#Preview {
+    return TimetableViewController()
 }

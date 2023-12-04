@@ -11,4 +11,8 @@ extension UIFont {
     static func luckiestGuyRegular(size: CGFloat = 17) -> UIFont? {
         return UIFont(name: "LuckiestGuy-Regular", size: size)
     }
+    
+    static func sfMonoRegular(size: CGFloat = 17) -> UIFont? {
+        return UIFont(name: "SFMono-Regular", size: size)
+    }
 }

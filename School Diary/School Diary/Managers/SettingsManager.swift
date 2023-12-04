@@ -24,6 +24,8 @@ final class SettingsManager {
     func signOut() -> Bool {
         guard self.account.signOut() else { return false }
         
+        RealmManager<LocalUserModel>().read().forEach({ RealmManager<LocalUserModel>().delete(object: $0) })
+        
         return true
     }
 }

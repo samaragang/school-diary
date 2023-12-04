@@ -21,7 +21,7 @@ final class ResponseUserModel: ResponseUserBaseModel {
         case accessToken
     }
     
-    required override init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         self.roleRawValue = try container.decode(Int.self, forKey: .roleRawValue)

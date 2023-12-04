@@ -7,463 +7,666 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7065380A2AD13A700009163A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 706538092AD13A700009163A /* SnapKit */; };
-		7065380C2AD13A700009163A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7065380B2AD13A700009163A /* SnapKit-Dynamic */; };
-		706538112AD13A9B0009163A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706538102AD13A9B0009163A /* SignViewController.swift */; };
-		706538132AD13AA20009163A /* SignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706538122AD13AA20009163A /* SignPresenter.swift */; };
-		706538162AD13AD40009163A /* SchoolDiaryUIComponents in Resources */ = {isa = PBXBuildFile; fileRef = 706538152AD13AD40009163A /* SchoolDiaryUIComponents */; };
-		706538192AD13AE10009163A /* SchoolDiaryUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 706538182AD13AE10009163A /* SchoolDiaryUIComponents */; };
-		707FFB032B1137CD0079B3CF /* ResponseUserBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */; };
-		707FFB072B1138400079B3CF /* ResponseTeacherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */; };
-		707FFB092B1138DA0079B3CF /* PupilTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */; };
-		707FFB0C2B1139180079B3CF /* PupilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0B2B1139180079B3CF /* PupilViewController.swift */; };
-		707FFB0E2B113ADD0079B3CF /* LocalTeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */; };
-		707FFB102B113CE70079B3CF /* PupilPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */; };
-		707FFB132B11400A0079B3CF /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB122B11400A0079B3CF /* TimetableViewController.swift */; };
-		707FFB172B11436A0079B3CF /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */; };
-		707FFB192B1144880079B3CF /* UICollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */; };
-		707FFB1B2B1144970079B3CF /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */; };
-		707FFB1D2B1145210079B3CF /* TimetableDaysType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */; };
-		707FFB1F2B1145F90079B3CF /* TimetablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */; };
-		707FFB222B1147F50079B3CF /* WeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB212B1147F50079B3CF /* WeekDaysView.swift */; };
-		707FFB242B114B070079B3CF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FFB232B114B070079B3CF /* Date+Ext.swift */; };
-		7088C0FB2AD1407D004D9A50 /* LuckiestGuy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */; };
-		7088C0FF2AD140BD004D9A50 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */; };
-		7088C1022AD143B2004D9A50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1012AD143B2004D9A50 /* Constants.swift */; };
-		7088C1072AD14897004D9A50 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1062AD14897004D9A50 /* MainCoordinator.swift */; };
-		7088C1092AD19484004D9A50 /* SignControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088C1082AD19484004D9A50 /* SignControllerType.swift */; };
-		70C0BECF2AF7B3C80057D6F3 /* FriendlyURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */; };
-		70C0BED12AF7B3D50057D6F3 /* SchoolsDiaryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */; };
-		70C0BED42AF7BAFB0057D6F3 /* ResponseSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */; };
-		70C0BED62AF7BB3C0057D6F3 /* ResponseUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */; };
-		70C0BED82AF7BB730057D6F3 /* ResponseAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */; };
-		70C0BEDA2AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */; };
-		70D0D2D52AD13A0F00CF5256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */; };
-		70D0D2D72AD13A0F00CF5256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */; };
-		70D0D2DC2AD13A0F00CF5256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */; };
-		70D0D2DE2AD13A1000CF5256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */; };
-		70D0D2E12AD13A1000CF5256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */; };
-		70DB3A532AF7C33B003B3E3F /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A522AF7C33B003B3E3F /* RoleType.swift */; };
-		70DB3A572AF7C54E003B3E3F /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 70DB3A562AF7C54E003B3E3F /* Realm */; };
-		70DB3A592AF7C54E003B3E3F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70DB3A582AF7C54E003B3E3F /* RealmSwift */; };
-		70DB3A5C2AF7C576003B3E3F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */; };
-		70DB3A5F2AF7C59C003B3E3F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */; };
-		70DB3A622AF7C5D4003B3E3F /* LocalUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */; };
-		70DB3A652AF7C6B9003B3E3F /* BaseKeychainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */; };
-		70DB3A682AF7C6EA003B3E3F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A672AF7C6EA003B3E3F /* Credentials.swift */; };
-		70DB3A6A2AF7C70C003B3E3F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A692AF7C70C003B3E3F /* Account.swift */; };
-		70DB3A6D2AF7CBCE003B3E3F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */; };
-		70DB3A712AF7CBF4003B3E3F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */; };
-		70DB3A732AF7D20D003B3E3F /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */; };
-		70DB3A762AF7D397003B3E3F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */; };
-		70DB3A782AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */; };
-		70DB3A7C2AF7D749003B3E3F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */; };
-		70DB3A7F2AF7E819003B3E3F /* TeacherTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */; };
-		70DB3A822AF7E88F003B3E3F /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */; };
-		70DB3A852AF7EBD2003B3E3F /* TeacherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */; };
+		700BE8BA2B1C05600082E05C /* ScheduleMenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BE8B92B1C05600082E05C /* ScheduleMenuType.swift */; };
+		700BE8BD2B1C8FB40082E05C /* LessonMarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BE8BC2B1C8FB40082E05C /* LessonMarksViewController.swift */; };
+		700BE8BF2B1C8FB90082E05C /* LessonMarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BE8BE2B1C8FB90082E05C /* LessonMarksPresenter.swift */; };
+		700BE8C12B1C95030082E05C /* PupilMarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BE8C02B1C95030082E05C /* PupilMarkTableViewCell.swift */; };
+		700BE8C32B1C98410082E05C /* MarkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BE8C22B1C98410082E05C /* MarkType.swift */; };
+		700C5D792B1292CC00A6F445 /* ResponseLessonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C5D782B1292CC00A6F445 /* ResponseLessonModel.swift */; };
+		700C5D7B2B1292F500A6F445 /* ResponseLessonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C5D7A2B1292F500A6F445 /* ResponseLessonsModel.swift */; };
+		700C5D7E2B12940800A6F445 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C5D7D2B12940800A6F445 /* ScheduleViewController.swift */; };
+		700C5D802B12A91E00A6F445 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C5D7F2B12A91E00A6F445 /* ScheduleTableViewCell.swift */; };
+		700C5D832B12ABDC00A6F445 /* ScheduleTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C5D822B12ABDC00A6F445 /* ScheduleTableHeaderView.swift */; };
+		700C60282B17C73600261FB4 /* ResponseHometaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C60272B17C73600261FB4 /* ResponseHometaskModel.swift */; };
+		700C602B2B17F3EF00261FB4 /* LessonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C602A2B17F3EF00261FB4 /* LessonInfoViewController.swift */; };
+		7054A4B02B124BAE00F39B6D /* ResponseBaseContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7054A4AF2B124BAE00F39B6D /* ResponseBaseContentModel.swift */; };
+		70A72C802B1C9CFA00771881 /* LessonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C7F2B1C9CFA00771881 /* LessonType.swift */; };
+		70A72C822B1CA12F00771881 /* ResponseShortUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C812B1CA12F00771881 /* ResponseShortUserInfoModel.swift */; };
+		70A72C842B1CA17600771881 /* ResponsePupilsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C832B1CA17600771881 /* ResponsePupilsModel.swift */; };
+		70A72C872B1CB2EC00771881 /* ChooseMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C862B1CB2EC00771881 /* ChooseMarkViewController.swift */; };
+		70A72C8A2B1CB42100771881 /* MarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C892B1CB42100771881 /* MarkCollectionViewCell.swift */; };
+		70A72C8C2B1CC9F800771881 /* SubjectMarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C8B2B1CC9F800771881 /* SubjectMarksTableViewCell.swift */; };
+		70A72C8F2B1CCA9800771881 /* ResponseSubjectMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C8E2B1CCA9800771881 /* ResponseSubjectMarkModel.swift */; };
+		70A72C912B1CCAEA00771881 /* ResponseSubjectMarksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C902B1CCAEA00771881 /* ResponseSubjectMarksModel.swift */; };
+		70A72C942B1CE39100771881 /* MarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C932B1CE39100771881 /* MarksViewController.swift */; };
+		70A72C9E2B1CE75800771881 /* MarksTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C9D2B1CE75800771881 /* MarksTableHeaderView.swift */; };
+		70A72CA02B1CE89E00771881 /* MarksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A72C9F2B1CE89E00771881 /* MarksPresenter.swift */; };
+		70BCE5202B123A07003D5FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE51F2B123A07003D5FA4 /* AppDelegate.swift */; };
+		70BCE5222B123A07003D5FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5212B123A07003D5FA4 /* SceneDelegate.swift */; };
+		70BCE5272B123A07003D5FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE5252B123A07003D5FA4 /* Main.storyboard */; };
+		70BCE5292B123A08003D5FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE5282B123A08003D5FA4 /* Assets.xcassets */; };
+		70BCE52C2B123A08003D5FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE52A2B123A08003D5FA4 /* LaunchScreen.storyboard */; };
+		70BCE5352B123A3A003D5FA4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE5342B123A3A003D5FA4 /* SnapKit */; };
+		70BCE53A2B123A48003D5FA4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE5392B123A48003D5FA4 /* SDWebImage */; };
+		70BCE53C2B123A48003D5FA4 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE53B2B123A48003D5FA4 /* SDWebImageMapKit */; };
+		70BCE53F2B123A6E003D5FA4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE53E2B123A6E003D5FA4 /* Realm */; };
+		70BCE5412B123A6E003D5FA4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE5402B123A6E003D5FA4 /* RealmSwift */; };
+		70BCE5442B123A85003D5FA4 /* FriendlyURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE5432B123A85003D5FA4 /* FriendlyURLSession */; };
+		70BCE5562B123D2F003D5FA4 /* SchoolsDiaryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE54D2B123D2F003D5FA4 /* SchoolsDiaryProvider.swift */; };
+		70BCE5572B123D2F003D5FA4 /* ResponseUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE54F2B123D2F003D5FA4 /* ResponseUserModel.swift */; };
+		70BCE5582B123D2F003D5FA4 /* ResponseTeacherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5502B123D2F003D5FA4 /* ResponseTeacherInfoModel.swift */; };
+		70BCE5592B123D2F003D5FA4 /* ResponseAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5512B123D2F003D5FA4 /* ResponseAccessTokenModel.swift */; };
+		70BCE55A2B123D2F003D5FA4 /* ResponseUserBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5522B123D2F003D5FA4 /* ResponseUserBaseModel.swift */; };
+		70BCE55B2B123D2F003D5FA4 /* ResponseSignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5532B123D2F003D5FA4 /* ResponseSignInModel.swift */; };
+		70BCE55D2B123D2F003D5FA4 /* SchoolsDiaryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5552B123D2F003D5FA4 /* SchoolsDiaryApi.swift */; };
+		70BCE5612B123D44003D5FA4 /* TimetableDaysType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE55F2B123D44003D5FA4 /* TimetableDaysType.swift */; };
+		70BCE5622B123D44003D5FA4 /* RoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5602B123D44003D5FA4 /* RoleType.swift */; };
+		70BCE5652B123D4C003D5FA4 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5642B123D4C003D5FA4 /* SettingsManager.swift */; };
+		70BCE5682B123D55003D5FA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5672B123D55003D5FA4 /* Constants.swift */; };
+		70BCE56C2B123D62003D5FA4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE56A2B123D61003D5FA4 /* Account.swift */; };
+		70BCE56D2B123D62003D5FA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE56B2B123D61003D5FA4 /* Credentials.swift */; };
+		70BCE5702B123D6D003D5FA4 /* BaseKeychainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE56F2B123D6D003D5FA4 /* BaseKeychainModel.swift */; };
+		70BCE5762B123D7D003D5FA4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5722B123D7D003D5FA4 /* RealmManager.swift */; };
+		70BCE5772B123D7D003D5FA4 /* LocalUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5742B123D7D003D5FA4 /* LocalUserModel.swift */; };
+		70BCE5782B123D7D003D5FA4 /* LocalTeacherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5752B123D7D003D5FA4 /* LocalTeacherModel.swift */; };
+		70BCE57B2B123DAD003D5FA4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE57A2B123DAD003D5FA4 /* MainCoordinator.swift */; };
+		70BCE57E2B123DBF003D5FA4 /* SchoolDiaryUIComponents in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE57D2B123DBF003D5FA4 /* SchoolDiaryUIComponents */; };
+		70BCE5812B123DE5003D5FA4 /* SchoolDiaryUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 70BCE5802B123DE5003D5FA4 /* SchoolDiaryUIComponents */; };
+		70BCE5A72B123DF2003D5FA4 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5842B123DF2003D5FA4 /* SettingsTableViewCell.swift */; };
+		70BCE5A82B123DF2003D5FA4 /* TimetableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5872B123DF2003D5FA4 /* TimetableCollectionViewCell.swift */; };
+		70BCE5A92B123DF2003D5FA4 /* SignControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE58A2B123DF2003D5FA4 /* SignControllerType.swift */; };
+		70BCE5AA2B123DF2003D5FA4 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE58B2B123DF2003D5FA4 /* SignViewController.swift */; };
+		70BCE5AB2B123DF2003D5FA4 /* SignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE58C2B123DF2003D5FA4 /* SignPresenter.swift */; };
+		70BCE5AC2B123DF2003D5FA4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE58E2B123DF2003D5FA4 /* SettingsViewController.swift */; };
+		70BCE5AD2B123DF2003D5FA4 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5902B123DF2003D5FA4 /* QRScannerViewController.swift */; };
+		70BCE5AE2B123DF2003D5FA4 /* TimetablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5922B123DF2003D5FA4 /* TimetablePresenter.swift */; };
+		70BCE5AF2B123DF2003D5FA4 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5932B123DF2003D5FA4 /* TimetableViewController.swift */; };
+		70BCE5B02B123DF2003D5FA4 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5952B123DF2003D5FA4 /* TeacherViewController.swift */; };
+		70BCE5B12B123DF2003D5FA4 /* PupilPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5972B123DF2003D5FA4 /* PupilPresenter.swift */; };
+		70BCE5B22B123DF2003D5FA4 /* PupilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5982B123DF2003D5FA4 /* PupilViewController.swift */; };
+		70BCE5B32B123DF2003D5FA4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE59A2B123DF2003D5FA4 /* UserViewController.swift */; };
+		70BCE5B42B123DF2003D5FA4 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE59D2B123DF2003D5FA4 /* UserInfoView.swift */; };
+		70BCE5B52B123DF2003D5FA4 /* TeacherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE59F2B123DF2003D5FA4 /* TeacherInfoView.swift */; };
+		70BCE5B72B123DF2003D5FA4 /* UserSettingsTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5A32B123DF2003D5FA4 /* UserSettingsTableHeaderView.swift */; };
+		70BCE5B82B123DF2003D5FA4 /* TeacherTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5A52B123DF2003D5FA4 /* TeacherTabBarController.swift */; };
+		70BCE5B92B123DF2003D5FA4 /* PupilTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5A62B123DF2003D5FA4 /* PupilTabBarController.swift */; };
+		70BCE5C22B123DFC003D5FA4 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5BB2B123DFC003D5FA4 /* Date+Ext.swift */; };
+		70BCE5C32B123DFC003D5FA4 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5BD2B123DFC003D5FA4 /* UIImageView+Ext.swift */; };
+		70BCE5C42B123DFC003D5FA4 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5BE2B123DFC003D5FA4 /* UICollectionView+Ext.swift */; };
+		70BCE5C52B123DFC003D5FA4 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5BF2B123DFC003D5FA4 /* UIFont+Ext.swift */; };
+		70BCE5C62B123DFC003D5FA4 /* UICollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5C02B123DFC003D5FA4 /* UICollectionViewCell+Ext.swift */; };
+		70BCE5C72B123DFC003D5FA4 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BCE5C12B123DFC003D5FA4 /* UIViewController+Ext.swift */; };
+		70BCE5CA2B123F11003D5FA4 /* LuckiestGuy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70BCE5C92B123F00003D5FA4 /* LuckiestGuy-Regular.ttf */; };
+		70F9C09C2B12B1770023370A /* SFMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70F9C09B2B12B16B0023370A /* SFMono-Regular.otf */; };
+		70F9C09E2B12B7450023370A /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9C09D2B12B7450023370A /* SchedulePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		706538102AD13A9B0009163A /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
-		706538122AD13AA20009163A /* SignPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPresenter.swift; sourceTree = "<group>"; };
-		706538152AD13AD40009163A /* SchoolDiaryUIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SchoolDiaryUIComponents; sourceTree = "<group>"; };
-		707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserBaseModel.swift; sourceTree = "<group>"; };
-		707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTeacherInfoModel.swift; sourceTree = "<group>"; };
-		707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilTabBarController.swift; sourceTree = "<group>"; };
-		707FFB0B2B1139180079B3CF /* PupilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilViewController.swift; sourceTree = "<group>"; };
-		707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTeacherModel.swift; sourceTree = "<group>"; };
-		707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilPresenter.swift; sourceTree = "<group>"; };
-		707FFB122B11400A0079B3CF /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
-		707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
-		707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
-		707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
-		707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableDaysType.swift; sourceTree = "<group>"; };
-		707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetablePresenter.swift; sourceTree = "<group>"; };
-		707FFB212B1147F50079B3CF /* WeekDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysView.swift; sourceTree = "<group>"; };
-		707FFB232B114B070079B3CF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
-		7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LuckiestGuy-Regular.ttf"; path = "../../../../../../../Downloads/Luckiest_Guy/LuckiestGuy-Regular.ttf"; sourceTree = "<group>"; };
-		7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
-		7088C1012AD143B2004D9A50 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7088C1062AD14897004D9A50 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		7088C1082AD19484004D9A50 /* SignControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignControllerType.swift; sourceTree = "<group>"; };
-		70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryApi.swift; sourceTree = "<group>"; };
-		70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSignInModel.swift; sourceTree = "<group>"; };
-		70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserModel.swift; sourceTree = "<group>"; };
-		70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAccessTokenModel.swift; sourceTree = "<group>"; };
-		70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryProvider.swift; sourceTree = "<group>"; };
-		70D0D2D12AD13A0F00CF5256 /* School Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70D0D2DB2AD13A0F00CF5256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		70D0D2E02AD13A1000CF5256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		70D0D2E22AD13A1000CF5256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70DB3A522AF7C33B003B3E3F /* RoleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
-		70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
-		70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserModel.swift; sourceTree = "<group>"; };
-		70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeychainModel.swift; sourceTree = "<group>"; };
-		70DB3A672AF7C6EA003B3E3F /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
-		70DB3A692AF7C70C003B3E3F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
-		70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
-		70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsTableHeaderView.swift; sourceTree = "<group>"; };
-		70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
-		70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTabBarController.swift; sourceTree = "<group>"; };
-		70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
-		70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherInfoView.swift; sourceTree = "<group>"; };
+		700BE8B92B1C05600082E05C /* ScheduleMenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleMenuType.swift; sourceTree = "<group>"; };
+		700BE8BC2B1C8FB40082E05C /* LessonMarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMarksViewController.swift; sourceTree = "<group>"; };
+		700BE8BE2B1C8FB90082E05C /* LessonMarksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonMarksPresenter.swift; sourceTree = "<group>"; };
+		700BE8C02B1C95030082E05C /* PupilMarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilMarkTableViewCell.swift; sourceTree = "<group>"; };
+		700BE8C22B1C98410082E05C /* MarkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkType.swift; sourceTree = "<group>"; };
+		700C5D782B1292CC00A6F445 /* ResponseLessonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLessonModel.swift; sourceTree = "<group>"; };
+		700C5D7A2B1292F500A6F445 /* ResponseLessonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLessonsModel.swift; sourceTree = "<group>"; };
+		700C5D7D2B12940800A6F445 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		700C5D7F2B12A91E00A6F445 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		700C5D822B12ABDC00A6F445 /* ScheduleTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableHeaderView.swift; sourceTree = "<group>"; };
+		700C60272B17C73600261FB4 /* ResponseHometaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHometaskModel.swift; sourceTree = "<group>"; };
+		700C602A2B17F3EF00261FB4 /* LessonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonInfoViewController.swift; sourceTree = "<group>"; };
+		7054A4AF2B124BAE00F39B6D /* ResponseBaseContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBaseContentModel.swift; sourceTree = "<group>"; };
+		70A72C7F2B1C9CFA00771881 /* LessonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonType.swift; sourceTree = "<group>"; };
+		70A72C812B1CA12F00771881 /* ResponseShortUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseShortUserInfoModel.swift; sourceTree = "<group>"; };
+		70A72C832B1CA17600771881 /* ResponsePupilsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePupilsModel.swift; sourceTree = "<group>"; };
+		70A72C862B1CB2EC00771881 /* ChooseMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMarkViewController.swift; sourceTree = "<group>"; };
+		70A72C892B1CB42100771881 /* MarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		70A72C8B2B1CC9F800771881 /* SubjectMarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectMarksTableViewCell.swift; sourceTree = "<group>"; };
+		70A72C8E2B1CCA9800771881 /* ResponseSubjectMarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSubjectMarkModel.swift; sourceTree = "<group>"; };
+		70A72C902B1CCAEA00771881 /* ResponseSubjectMarksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSubjectMarksModel.swift; sourceTree = "<group>"; };
+		70A72C932B1CE39100771881 /* MarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksViewController.swift; sourceTree = "<group>"; };
+		70A72C9D2B1CE75800771881 /* MarksTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksTableHeaderView.swift; sourceTree = "<group>"; };
+		70A72C9F2B1CE89E00771881 /* MarksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksPresenter.swift; sourceTree = "<group>"; };
+		70BCE51C2B123A07003D5FA4 /* School Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BCE51F2B123A07003D5FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70BCE5212B123A07003D5FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70BCE5262B123A07003D5FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70BCE5282B123A08003D5FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70BCE52B2B123A08003D5FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70BCE52D2B123A08003D5FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BCE54D2B123D2F003D5FA4 /* SchoolsDiaryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryProvider.swift; sourceTree = "<group>"; };
+		70BCE54F2B123D2F003D5FA4 /* ResponseUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseUserModel.swift; sourceTree = "<group>"; };
+		70BCE5502B123D2F003D5FA4 /* ResponseTeacherInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTeacherInfoModel.swift; sourceTree = "<group>"; };
+		70BCE5512B123D2F003D5FA4 /* ResponseAccessTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseAccessTokenModel.swift; sourceTree = "<group>"; };
+		70BCE5522B123D2F003D5FA4 /* ResponseUserBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseUserBaseModel.swift; sourceTree = "<group>"; };
+		70BCE5532B123D2F003D5FA4 /* ResponseSignInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSignInModel.swift; sourceTree = "<group>"; };
+		70BCE5552B123D2F003D5FA4 /* SchoolsDiaryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolsDiaryApi.swift; sourceTree = "<group>"; };
+		70BCE55F2B123D44003D5FA4 /* TimetableDaysType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableDaysType.swift; sourceTree = "<group>"; };
+		70BCE5602B123D44003D5FA4 /* RoleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleType.swift; sourceTree = "<group>"; };
+		70BCE5642B123D4C003D5FA4 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		70BCE5672B123D55003D5FA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70BCE56A2B123D61003D5FA4 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		70BCE56B2B123D61003D5FA4 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		70BCE56F2B123D6D003D5FA4 /* BaseKeychainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseKeychainModel.swift; sourceTree = "<group>"; };
+		70BCE5722B123D7D003D5FA4 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		70BCE5742B123D7D003D5FA4 /* LocalUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalUserModel.swift; sourceTree = "<group>"; };
+		70BCE5752B123D7D003D5FA4 /* LocalTeacherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalTeacherModel.swift; sourceTree = "<group>"; };
+		70BCE57A2B123DAD003D5FA4 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		70BCE57D2B123DBF003D5FA4 /* SchoolDiaryUIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SchoolDiaryUIComponents; sourceTree = "<group>"; };
+		70BCE5842B123DF2003D5FA4 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		70BCE5872B123DF2003D5FA4 /* TimetableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableCollectionViewCell.swift; sourceTree = "<group>"; };
+		70BCE58A2B123DF2003D5FA4 /* SignControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignControllerType.swift; sourceTree = "<group>"; };
+		70BCE58B2B123DF2003D5FA4 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		70BCE58C2B123DF2003D5FA4 /* SignPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignPresenter.swift; sourceTree = "<group>"; };
+		70BCE58E2B123DF2003D5FA4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		70BCE5902B123DF2003D5FA4 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		70BCE5922B123DF2003D5FA4 /* TimetablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetablePresenter.swift; sourceTree = "<group>"; };
+		70BCE5932B123DF2003D5FA4 /* TimetableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		70BCE5952B123DF2003D5FA4 /* TeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		70BCE5972B123DF2003D5FA4 /* PupilPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilPresenter.swift; sourceTree = "<group>"; };
+		70BCE5982B123DF2003D5FA4 /* PupilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilViewController.swift; sourceTree = "<group>"; };
+		70BCE59A2B123DF2003D5FA4 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		70BCE59D2B123DF2003D5FA4 /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		70BCE59F2B123DF2003D5FA4 /* TeacherInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherInfoView.swift; sourceTree = "<group>"; };
+		70BCE5A32B123DF2003D5FA4 /* UserSettingsTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsTableHeaderView.swift; sourceTree = "<group>"; };
+		70BCE5A52B123DF2003D5FA4 /* TeacherTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherTabBarController.swift; sourceTree = "<group>"; };
+		70BCE5A62B123DF2003D5FA4 /* PupilTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PupilTabBarController.swift; sourceTree = "<group>"; };
+		70BCE5BB2B123DFC003D5FA4 /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5BD2B123DFC003D5FA4 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5BE2B123DFC003D5FA4 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5BF2B123DFC003D5FA4 /* UIFont+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5C02B123DFC003D5FA4 /* UICollectionViewCell+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5C12B123DFC003D5FA4 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		70BCE5C92B123F00003D5FA4 /* LuckiestGuy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LuckiestGuy-Regular.ttf"; sourceTree = "<group>"; };
+		70F9C09B2B12B16B0023370A /* SFMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFMono-Regular.otf"; sourceTree = "<group>"; };
+		70F9C09D2B12B7450023370A /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		70D0D2CE2AD13A0F00CF5256 /* Frameworks */ = {
+		70BCE5192B123A07003D5FA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70DB3A592AF7C54E003B3E3F /* RealmSwift in Frameworks */,
-				706538192AD13AE10009163A /* SchoolDiaryUIComponents in Frameworks */,
-				7065380A2AD13A700009163A /* SnapKit in Frameworks */,
-				70C0BECF2AF7B3C80057D6F3 /* FriendlyURLSession in Frameworks */,
-				7065380C2AD13A700009163A /* SnapKit-Dynamic in Frameworks */,
-				70DB3A572AF7C54E003B3E3F /* Realm in Frameworks */,
+				70BCE5412B123A6E003D5FA4 /* RealmSwift in Frameworks */,
+				70BCE5812B123DE5003D5FA4 /* SchoolDiaryUIComponents in Frameworks */,
+				70BCE53A2B123A48003D5FA4 /* SDWebImage in Frameworks */,
+				70BCE5352B123A3A003D5FA4 /* SnapKit in Frameworks */,
+				70BCE53C2B123A48003D5FA4 /* SDWebImageMapKit in Frameworks */,
+				70BCE53F2B123A6E003D5FA4 /* Realm in Frameworks */,
+				70BCE5442B123A85003D5FA4 /* FriendlyURLSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7065380D2AD13A820009163A /* UI */ = {
+		700BE8BB2B1C8FA50082E05C /* LessonMarksViewController */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB142B1143590079B3CF /* CollectionViewCells */,
-				70DB3A7D2AF7E809003B3E3F /* TabBarControllers */,
-				70DB3A7A2AF7D73E003B3E3F /* TableViewCells */,
-				70DB3A6E2AF7CBE9003B3E3F /* Views */,
-				7065380E2AD13A880009163A /* ViewControllers */,
+				700BE8BC2B1C8FB40082E05C /* LessonMarksViewController.swift */,
+				700BE8BE2B1C8FB90082E05C /* LessonMarksPresenter.swift */,
 			);
-			path = UI;
+			path = LessonMarksViewController;
 			sourceTree = "<group>";
 		};
-		7065380E2AD13A880009163A /* ViewControllers */ = {
+		700C5D7C2B1293F600A6F445 /* ScheduleViewController */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB112B1140020079B3CF /* TimetableViewController */,
-				707FFB0A2B11390D0079B3CF /* PupilViewController */,
-				70DB3A802AF7E885003B3E3F /* TeacherViewController */,
-				70DB3A742AF7D390003B3E3F /* SettingsViewController */,
-				70DB3A6B2AF7CBC5003B3E3F /* UserViewController */,
-				7065380F2AD13A910009163A /* SignViewController */,
+				700C5D7D2B12940800A6F445 /* ScheduleViewController.swift */,
+				70F9C09D2B12B7450023370A /* SchedulePresenter.swift */,
 			);
-			path = ViewControllers;
+			path = ScheduleViewController;
 			sourceTree = "<group>";
 		};
-		7065380F2AD13A910009163A /* SignViewController */ = {
+		700C5D812B12ABCE00A6F445 /* ScheduleTableHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				706538102AD13A9B0009163A /* SignViewController.swift */,
-				706538122AD13AA20009163A /* SignPresenter.swift */,
-				7088C1082AD19484004D9A50 /* SignControllerType.swift */,
+				700C5D822B12ABDC00A6F445 /* ScheduleTableHeaderView.swift */,
 			);
-			path = SignViewController;
+			path = ScheduleTableHeaderView;
 			sourceTree = "<group>";
 		};
-		706538142AD13AAE0009163A /* Packages */ = {
+		700C60292B17F3E000261FB4 /* LessonInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
-				706538152AD13AD40009163A /* SchoolDiaryUIComponents */,
+				700C602A2B17F3EF00261FB4 /* LessonInfoViewController.swift */,
 			);
-			path = Packages;
+			path = LessonInfoViewController;
 			sourceTree = "<group>";
 		};
-		707FFB0A2B11390D0079B3CF /* PupilViewController */ = {
+		70A72C852B1CB2DB00771881 /* ChooseMarkViewController */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB0B2B1139180079B3CF /* PupilViewController.swift */,
-				707FFB0F2B113CE70079B3CF /* PupilPresenter.swift */,
+				70A72C862B1CB2EC00771881 /* ChooseMarkViewController.swift */,
 			);
-			path = PupilViewController;
+			path = ChooseMarkViewController;
 			sourceTree = "<group>";
 		};
-		707FFB112B1140020079B3CF /* TimetableViewController */ = {
+		70A72C882B1CB41300771881 /* MarkCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB122B11400A0079B3CF /* TimetableViewController.swift */,
-				707FFB1E2B1145F90079B3CF /* TimetablePresenter.swift */,
+				70A72C892B1CB42100771881 /* MarkCollectionViewCell.swift */,
 			);
-			path = TimetableViewController;
+			path = MarkCollectionViewCell;
 			sourceTree = "<group>";
 		};
-		707FFB142B1143590079B3CF /* CollectionViewCells */ = {
+		70A72C922B1CE38800771881 /* MarksViewController */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB152B1143630079B3CF /* TimetableCollectionViewCell */,
+				70A72C932B1CE39100771881 /* MarksViewController.swift */,
+				70A72C9F2B1CE89E00771881 /* MarksPresenter.swift */,
 			);
-			path = CollectionViewCells;
+			path = MarksViewController;
 			sourceTree = "<group>";
 		};
-		707FFB152B1143630079B3CF /* TimetableCollectionViewCell */ = {
+		70A72C952B1CE62600771881 /* SettingsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB162B11436A0079B3CF /* TimetableCollectionViewCell.swift */,
+				70BCE5842B123DF2003D5FA4 /* SettingsTableViewCell.swift */,
 			);
-			path = TimetableCollectionViewCell;
+			path = SettingsTableViewCell;
 			sourceTree = "<group>";
 		};
-		707FFB202B1147E60079B3CF /* WeekDaysView */ = {
+		70A72C972B1CE63500771881 /* ScheduleTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB212B1147F50079B3CF /* WeekDaysView.swift */,
+				700C5D7F2B12A91E00A6F445 /* ScheduleTableViewCell.swift */,
 			);
-			path = WeekDaysView;
+			path = ScheduleTableViewCell;
 			sourceTree = "<group>";
 		};
-		7088C0F92AD13F1B004D9A50 /* Fonts */ = {
+		70A72C982B1CE64000771881 /* PupilMarkTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				7088C0FA2AD14036004D9A50 /* LuckiestGuy-Regular.ttf */,
+				700BE8C02B1C95030082E05C /* PupilMarkTableViewCell.swift */,
 			);
-			path = Fonts;
+			path = PupilMarkTableViewCell;
 			sourceTree = "<group>";
 		};
-		7088C0FC2AD140B4004D9A50 /* Extensions */ = {
+		70A72C992B1CE66300771881 /* SubjectMarksTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				7088C0FD2AD140B7004D9A50 /* UIKit+Ext */,
-				707FFB232B114B070079B3CF /* Date+Ext.swift */,
+				70A72C8B2B1CC9F800771881 /* SubjectMarksTableViewCell.swift */,
 			);
-			path = Extensions;
+			path = SubjectMarksTableViewCell;
 			sourceTree = "<group>";
 		};
-		7088C0FD2AD140B7004D9A50 /* UIKit+Ext */ = {
+		70A72C9A2B1CE67400771881 /* TeacherTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				7088C0FE2AD140BD004D9A50 /* UIFont+Ext.swift */,
-				70DB3A722AF7D20D003B3E3F /* UIViewController+Ext.swift */,
-				707FFB182B1144880079B3CF /* UICollectionViewCell+Ext.swift */,
-				707FFB1A2B1144970079B3CF /* UICollectionView+Ext.swift */,
+				70BCE5A52B123DF2003D5FA4 /* TeacherTabBarController.swift */,
 			);
-			path = "UIKit+Ext";
+			path = TeacherTabBarController;
 			sourceTree = "<group>";
 		};
-		7088C1002AD143A3004D9A50 /* HelpfulFiles */ = {
+		70A72C9B2B1CE67D00771881 /* PupilTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				7088C1012AD143B2004D9A50 /* Constants.swift */,
+				70BCE5A62B123DF2003D5FA4 /* PupilTabBarController.swift */,
 			);
-			path = HelpfulFiles;
+			path = PupilTabBarController;
 			sourceTree = "<group>";
 		};
-		7088C1052AD1488E004D9A50 /* Coordinator */ = {
+		70A72C9C2B1CE74600771881 /* MarksTableHeaderView */ = {
 			isa = PBXGroup;
 			children = (
-				7088C1062AD14897004D9A50 /* MainCoordinator.swift */,
+				70A72C9D2B1CE75800771881 /* MarksTableHeaderView.swift */,
 			);
-			path = Coordinator;
+			path = MarksTableHeaderView;
 			sourceTree = "<group>";
 		};
-		70C0BECC2AF7B3B30057D6F3 /* Api */ = {
+		70BCE5132B123A07003D5FA4 = {
 			isa = PBXGroup;
 			children = (
-				70C0BED22AF7B50A0057D6F3 /* Models */,
-				70C0BED02AF7B3D50057D6F3 /* SchoolsDiaryApi.swift */,
-				70C0BED92AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		70C0BED22AF7B50A0057D6F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				70C0BED32AF7BAFB0057D6F3 /* ResponseSignInModel.swift */,
-				70C0BED52AF7BB3C0057D6F3 /* ResponseUserModel.swift */,
-				70C0BED72AF7BB730057D6F3 /* ResponseAccessTokenModel.swift */,
-				707FFB022B1137CD0079B3CF /* ResponseUserBaseModel.swift */,
-				707FFB062B1138400079B3CF /* ResponseTeacherInfoModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		70D0D2C82AD13A0F00CF5256 = {
-			isa = PBXGroup;
-			children = (
-				70D0D2D32AD13A0F00CF5256 /* School Diary */,
-				70D0D2D22AD13A0F00CF5256 /* Products */,
+				70BCE51E2B123A07003D5FA4 /* School Diary */,
+				70BCE51D2B123A07003D5FA4 /* Products */,
+				70BCE54B2B123CB1003D5FA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		70D0D2D22AD13A0F00CF5256 /* Products */ = {
+		70BCE51D2B123A07003D5FA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70D0D2D12AD13A0F00CF5256 /* School Diary.app */,
+				70BCE51C2B123A07003D5FA4 /* School Diary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		70D0D2D32AD13A0F00CF5256 /* School Diary */ = {
+		70BCE51E2B123A07003D5FA4 /* School Diary */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A662AF7C6E5003B3E3F /* Models */,
-				70DB3A632AF7C6B2003B3E3F /* BaseItems */,
-				70DB3A5D2AF7C596003B3E3F /* Managers */,
-				70DB3A5A2AF7C555003B3E3F /* Realm */,
-				70DB3A512AF7C333003B3E3F /* Enums */,
-				70C0BECC2AF7B3B30057D6F3 /* Api */,
-				7088C1052AD1488E004D9A50 /* Coordinator */,
-				7088C1002AD143A3004D9A50 /* HelpfulFiles */,
-				7088C0FC2AD140B4004D9A50 /* Extensions */,
-				7088C0F92AD13F1B004D9A50 /* Fonts */,
-				706538142AD13AAE0009163A /* Packages */,
-				7065380D2AD13A820009163A /* UI */,
-				70D0D2D42AD13A0F00CF5256 /* AppDelegate.swift */,
-				70D0D2D62AD13A0F00CF5256 /* SceneDelegate.swift */,
-				70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */,
-				70D0D2DD2AD13A1000CF5256 /* Assets.xcassets */,
-				70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */,
-				70D0D2E22AD13A1000CF5256 /* Info.plist */,
+				70BCE54C2B123D2F003D5FA4 /* Api */,
+				70BCE56E2B123D6D003D5FA4 /* BaseItems */,
+				70BCE5792B123DAD003D5FA4 /* Coordinator */,
+				70BCE55E2B123D44003D5FA4 /* Enums */,
+				70BCE5BA2B123DFC003D5FA4 /* Extensions */,
+				70BCE5C82B123E84003D5FA4 /* Fonts */,
+				70BCE5662B123D55003D5FA4 /* HelpfulFiles */,
+				70BCE5632B123D4C003D5FA4 /* Managers */,
+				70BCE5692B123D61003D5FA4 /* Models */,
+				70BCE57C2B123DBF003D5FA4 /* Packages */,
+				70BCE5712B123D7D003D5FA4 /* Realm */,
+				70BCE5822B123DF2003D5FA4 /* UI */,
+				70BCE51F2B123A07003D5FA4 /* AppDelegate.swift */,
+				70BCE5212B123A07003D5FA4 /* SceneDelegate.swift */,
+				70BCE5252B123A07003D5FA4 /* Main.storyboard */,
+				70BCE5282B123A08003D5FA4 /* Assets.xcassets */,
+				70BCE52A2B123A08003D5FA4 /* LaunchScreen.storyboard */,
+				70BCE52D2B123A08003D5FA4 /* Info.plist */,
 			);
 			path = "School Diary";
 			sourceTree = "<group>";
 		};
-		70DB3A512AF7C333003B3E3F /* Enums */ = {
+		70BCE54B2B123CB1003D5FA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A522AF7C33B003B3E3F /* RoleType.swift */,
-				707FFB1C2B1145210079B3CF /* TimetableDaysType.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70BCE54C2B123D2F003D5FA4 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE54E2B123D2F003D5FA4 /* Models */,
+				70BCE54D2B123D2F003D5FA4 /* SchoolsDiaryProvider.swift */,
+				70BCE5552B123D2F003D5FA4 /* SchoolsDiaryApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		70BCE54E2B123D2F003D5FA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE54F2B123D2F003D5FA4 /* ResponseUserModel.swift */,
+				70BCE5502B123D2F003D5FA4 /* ResponseTeacherInfoModel.swift */,
+				70BCE5512B123D2F003D5FA4 /* ResponseAccessTokenModel.swift */,
+				70BCE5522B123D2F003D5FA4 /* ResponseUserBaseModel.swift */,
+				70BCE5532B123D2F003D5FA4 /* ResponseSignInModel.swift */,
+				7054A4AF2B124BAE00F39B6D /* ResponseBaseContentModel.swift */,
+				700C5D782B1292CC00A6F445 /* ResponseLessonModel.swift */,
+				700C5D7A2B1292F500A6F445 /* ResponseLessonsModel.swift */,
+				700C60272B17C73600261FB4 /* ResponseHometaskModel.swift */,
+				70A72C812B1CA12F00771881 /* ResponseShortUserInfoModel.swift */,
+				70A72C832B1CA17600771881 /* ResponsePupilsModel.swift */,
+				70A72C8E2B1CCA9800771881 /* ResponseSubjectMarkModel.swift */,
+				70A72C902B1CCAEA00771881 /* ResponseSubjectMarksModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70BCE55E2B123D44003D5FA4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE55F2B123D44003D5FA4 /* TimetableDaysType.swift */,
+				70BCE5602B123D44003D5FA4 /* RoleType.swift */,
+				700BE8B92B1C05600082E05C /* ScheduleMenuType.swift */,
+				700BE8C22B1C98410082E05C /* MarkType.swift */,
+				70A72C7F2B1C9CFA00771881 /* LessonType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		70DB3A5A2AF7C555003B3E3F /* Realm */ = {
+		70BCE5632B123D4C003D5FA4 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A602AF7C5CF003B3E3F /* Models */,
-				70DB3A5B2AF7C576003B3E3F /* RealmManager.swift */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		70DB3A5D2AF7C596003B3E3F /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				70DB3A5E2AF7C59C003B3E3F /* SettingsManager.swift */,
+				70BCE5642B123D4C003D5FA4 /* SettingsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		70DB3A602AF7C5CF003B3E3F /* Models */ = {
+		70BCE5662B123D55003D5FA4 /* HelpfulFiles */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A612AF7C5D4003B3E3F /* LocalUserModel.swift */,
-				707FFB0D2B113ADD0079B3CF /* LocalTeacherModel.swift */,
+				70BCE5672B123D55003D5FA4 /* Constants.swift */,
+			);
+			path = HelpfulFiles;
+			sourceTree = "<group>";
+		};
+		70BCE5692B123D61003D5FA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE56A2B123D61003D5FA4 /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		70DB3A632AF7C6B2003B3E3F /* BaseItems */ = {
+		70BCE56E2B123D6D003D5FA4 /* BaseItems */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A642AF7C6B9003B3E3F /* BaseKeychainModel.swift */,
+				70BCE56F2B123D6D003D5FA4 /* BaseKeychainModel.swift */,
+				70BCE56B2B123D61003D5FA4 /* Credentials.swift */,
 			);
 			path = BaseItems;
 			sourceTree = "<group>";
 		};
-		70DB3A662AF7C6E5003B3E3F /* Models */ = {
+		70BCE5712B123D7D003D5FA4 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A672AF7C6EA003B3E3F /* Credentials.swift */,
-				70DB3A692AF7C70C003B3E3F /* Account.swift */,
+				70BCE5722B123D7D003D5FA4 /* RealmManager.swift */,
+				70BCE5732B123D7D003D5FA4 /* Models */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		70BCE5732B123D7D003D5FA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5742B123D7D003D5FA4 /* LocalUserModel.swift */,
+				70BCE5752B123D7D003D5FA4 /* LocalTeacherModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		70DB3A6B2AF7CBC5003B3E3F /* UserViewController */ = {
+		70BCE5792B123DAD003D5FA4 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A6C2AF7CBCE003B3E3F /* UserViewController.swift */,
+				70BCE57A2B123DAD003D5FA4 /* MainCoordinator.swift */,
 			);
-			path = UserViewController;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		70DB3A6E2AF7CBE9003B3E3F /* Views */ = {
+		70BCE57C2B123DBF003D5FA4 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				707FFB202B1147E60079B3CF /* WeekDaysView */,
-				70DB3A832AF7EBC9003B3E3F /* TeacherInfoView */,
-				70DB3A792AF7D735003B3E3F /* UserSettingsTableHeaderView */,
-				70DB3A6F2AF7CBED003B3E3F /* UserInfoView */,
+				70BCE57D2B123DBF003D5FA4 /* SchoolDiaryUIComponents */,
 			);
-			path = Views;
+			path = Packages;
 			sourceTree = "<group>";
 		};
-		70DB3A6F2AF7CBED003B3E3F /* UserInfoView */ = {
+		70BCE5822B123DF2003D5FA4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A702AF7CBF4003B3E3F /* UserInfoView.swift */,
+				70BCE5832B123DF2003D5FA4 /* TableViewCells */,
+				70BCE5852B123DF2003D5FA4 /* CollectionViewCells */,
+				70BCE5882B123DF2003D5FA4 /* ViewControllers */,
+				70BCE59B2B123DF2003D5FA4 /* Views */,
+				70BCE5A42B123DF2003D5FA4 /* TabBarControllers */,
 			);
-			path = UserInfoView;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		70DB3A742AF7D390003B3E3F /* SettingsViewController */ = {
+		70BCE5832B123DF2003D5FA4 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A752AF7D397003B3E3F /* SettingsViewController.swift */,
-			);
-			path = SettingsViewController;
-			sourceTree = "<group>";
-		};
-		70DB3A792AF7D735003B3E3F /* UserSettingsTableHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				70DB3A772AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift */,
-			);
-			path = UserSettingsTableHeaderView;
-			sourceTree = "<group>";
-		};
-		70DB3A7A2AF7D73E003B3E3F /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				70DB3A7B2AF7D749003B3E3F /* SettingsTableViewCell.swift */,
+				70A72C992B1CE66300771881 /* SubjectMarksTableViewCell */,
+				70A72C982B1CE64000771881 /* PupilMarkTableViewCell */,
+				70A72C972B1CE63500771881 /* ScheduleTableViewCell */,
+				70A72C952B1CE62600771881 /* SettingsTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		70DB3A7D2AF7E809003B3E3F /* TabBarControllers */ = {
+		70BCE5852B123DF2003D5FA4 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A7E2AF7E819003B3E3F /* TeacherTabBarController.swift */,
-				707FFB082B1138DA0079B3CF /* PupilTabBarController.swift */,
+				70A72C882B1CB41300771881 /* MarkCollectionViewCell */,
+				70BCE5862B123DF2003D5FA4 /* TimetableCollectionViewCell */,
 			);
-			path = TabBarControllers;
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
-		70DB3A802AF7E885003B3E3F /* TeacherViewController */ = {
+		70BCE5862B123DF2003D5FA4 /* TimetableCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A812AF7E88F003B3E3F /* TeacherViewController.swift */,
+				70BCE5872B123DF2003D5FA4 /* TimetableCollectionViewCell.swift */,
+			);
+			path = TimetableCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		70BCE5882B123DF2003D5FA4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70A72C922B1CE38800771881 /* MarksViewController */,
+				70A72C852B1CB2DB00771881 /* ChooseMarkViewController */,
+				700BE8BB2B1C8FA50082E05C /* LessonMarksViewController */,
+				700C60292B17F3E000261FB4 /* LessonInfoViewController */,
+				700C5D7C2B1293F600A6F445 /* ScheduleViewController */,
+				70BCE5892B123DF2003D5FA4 /* SignViewController */,
+				70BCE58D2B123DF2003D5FA4 /* SettingsViewController */,
+				70BCE58F2B123DF2003D5FA4 /* QRScannerViewController */,
+				70BCE5912B123DF2003D5FA4 /* TimetableViewController */,
+				70BCE5942B123DF2003D5FA4 /* TeacherViewController */,
+				70BCE5962B123DF2003D5FA4 /* PupilViewController */,
+				70BCE5992B123DF2003D5FA4 /* UserViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70BCE5892B123DF2003D5FA4 /* SignViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE58A2B123DF2003D5FA4 /* SignControllerType.swift */,
+				70BCE58B2B123DF2003D5FA4 /* SignViewController.swift */,
+				70BCE58C2B123DF2003D5FA4 /* SignPresenter.swift */,
+			);
+			path = SignViewController;
+			sourceTree = "<group>";
+		};
+		70BCE58D2B123DF2003D5FA4 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE58E2B123DF2003D5FA4 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		70BCE58F2B123DF2003D5FA4 /* QRScannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5902B123DF2003D5FA4 /* QRScannerViewController.swift */,
+			);
+			path = QRScannerViewController;
+			sourceTree = "<group>";
+		};
+		70BCE5912B123DF2003D5FA4 /* TimetableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5922B123DF2003D5FA4 /* TimetablePresenter.swift */,
+				70BCE5932B123DF2003D5FA4 /* TimetableViewController.swift */,
+			);
+			path = TimetableViewController;
+			sourceTree = "<group>";
+		};
+		70BCE5942B123DF2003D5FA4 /* TeacherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5952B123DF2003D5FA4 /* TeacherViewController.swift */,
 			);
 			path = TeacherViewController;
 			sourceTree = "<group>";
 		};
-		70DB3A832AF7EBC9003B3E3F /* TeacherInfoView */ = {
+		70BCE5962B123DF2003D5FA4 /* PupilViewController */ = {
 			isa = PBXGroup;
 			children = (
-				70DB3A842AF7EBD2003B3E3F /* TeacherInfoView.swift */,
+				70BCE5972B123DF2003D5FA4 /* PupilPresenter.swift */,
+				70BCE5982B123DF2003D5FA4 /* PupilViewController.swift */,
+			);
+			path = PupilViewController;
+			sourceTree = "<group>";
+		};
+		70BCE5992B123DF2003D5FA4 /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE59A2B123DF2003D5FA4 /* UserViewController.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		70BCE59B2B123DF2003D5FA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70A72C9C2B1CE74600771881 /* MarksTableHeaderView */,
+				700C5D812B12ABCE00A6F445 /* ScheduleTableHeaderView */,
+				70BCE59C2B123DF2003D5FA4 /* UserInfoView */,
+				70BCE59E2B123DF2003D5FA4 /* TeacherInfoView */,
+				70BCE5A22B123DF2003D5FA4 /* UserSettingsTableHeaderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70BCE59C2B123DF2003D5FA4 /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE59D2B123DF2003D5FA4 /* UserInfoView.swift */,
+			);
+			path = UserInfoView;
+			sourceTree = "<group>";
+		};
+		70BCE59E2B123DF2003D5FA4 /* TeacherInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE59F2B123DF2003D5FA4 /* TeacherInfoView.swift */,
 			);
 			path = TeacherInfoView;
+			sourceTree = "<group>";
+		};
+		70BCE5A22B123DF2003D5FA4 /* UserSettingsTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5A32B123DF2003D5FA4 /* UserSettingsTableHeaderView.swift */,
+			);
+			path = UserSettingsTableHeaderView;
+			sourceTree = "<group>";
+		};
+		70BCE5A42B123DF2003D5FA4 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70A72C9B2B1CE67D00771881 /* PupilTabBarController */,
+				70A72C9A2B1CE67400771881 /* TeacherTabBarController */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		70BCE5BA2B123DFC003D5FA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5BB2B123DFC003D5FA4 /* Date+Ext.swift */,
+				70BCE5BC2B123DFC003D5FA4 /* UIKit+Ext */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70BCE5BC2B123DFC003D5FA4 /* UIKit+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5BD2B123DFC003D5FA4 /* UIImageView+Ext.swift */,
+				70BCE5BE2B123DFC003D5FA4 /* UICollectionView+Ext.swift */,
+				70BCE5BF2B123DFC003D5FA4 /* UIFont+Ext.swift */,
+				70BCE5C02B123DFC003D5FA4 /* UICollectionViewCell+Ext.swift */,
+				70BCE5C12B123DFC003D5FA4 /* UIViewController+Ext.swift */,
+			);
+			path = "UIKit+Ext";
+			sourceTree = "<group>";
+		};
+		70BCE5C82B123E84003D5FA4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				70BCE5C92B123F00003D5FA4 /* LuckiestGuy-Regular.ttf */,
+				70F9C09B2B12B16B0023370A /* SFMono-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70D0D2D02AD13A0F00CF5256 /* School Diary */ = {
+		70BCE51B2B123A07003D5FA4 /* School Diary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70D0D2E52AD13A1000CF5256 /* Build configuration list for PBXNativeTarget "School Diary" */;
+			buildConfigurationList = 70BCE5302B123A08003D5FA4 /* Build configuration list for PBXNativeTarget "School Diary" */;
 			buildPhases = (
-				70D0D2CD2AD13A0F00CF5256 /* Sources */,
-				70D0D2CE2AD13A0F00CF5256 /* Frameworks */,
-				70D0D2CF2AD13A0F00CF5256 /* Resources */,
-				7088C0F82AD13BFA004D9A50 /* ShellScript */,
+				70BCE5182B123A07003D5FA4 /* Sources */,
+				70BCE5192B123A07003D5FA4 /* Frameworks */,
+				70BCE51A2B123A07003D5FA4 /* Resources */,
+				700BE8B82B1BF46D0082E05C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -471,33 +674,34 @@
 			);
 			name = "School Diary";
 			packageProductDependencies = (
-				706538092AD13A700009163A /* SnapKit */,
-				7065380B2AD13A700009163A /* SnapKit-Dynamic */,
-				706538182AD13AE10009163A /* SchoolDiaryUIComponents */,
-				70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */,
-				70DB3A562AF7C54E003B3E3F /* Realm */,
-				70DB3A582AF7C54E003B3E3F /* RealmSwift */,
+				70BCE5342B123A3A003D5FA4 /* SnapKit */,
+				70BCE5392B123A48003D5FA4 /* SDWebImage */,
+				70BCE53B2B123A48003D5FA4 /* SDWebImageMapKit */,
+				70BCE53E2B123A6E003D5FA4 /* Realm */,
+				70BCE5402B123A6E003D5FA4 /* RealmSwift */,
+				70BCE5432B123A85003D5FA4 /* FriendlyURLSession */,
+				70BCE5802B123DE5003D5FA4 /* SchoolDiaryUIComponents */,
 			);
 			productName = "School Diary";
-			productReference = 70D0D2D12AD13A0F00CF5256 /* School Diary.app */;
+			productReference = 70BCE51C2B123A07003D5FA4 /* School Diary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		70D0D2C92AD13A0F00CF5256 /* Project object */ = {
+		70BCE5142B123A07003D5FA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					70D0D2D02AD13A0F00CF5256 = {
-						CreatedOnToolsVersion = 14.2;
+					70BCE51B2B123A07003D5FA4 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 70D0D2CC2AD13A0F00CF5256 /* Build configuration list for PBXProject "School Diary" */;
+			buildConfigurationList = 70BCE5172B123A07003D5FA4 /* Build configuration list for PBXProject "School Diary" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -505,39 +709,41 @@
 				en,
 				Base,
 			);
-			mainGroup = 70D0D2C82AD13A0F00CF5256;
+			mainGroup = 70BCE5132B123A07003D5FA4;
 			packageReferences = (
-				706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */,
-				706538172AD13AE10009163A /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */,
-				70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */,
-				70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */,
+				70BCE5332B123A3A003D5FA4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				70BCE5382B123A48003D5FA4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				70BCE53D2B123A6E003D5FA4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				70BCE5422B123A85003D5FA4 /* XCRemoteSwiftPackageReference "friendly-urlsession" */,
+				70BCE57F2B123DE5003D5FA4 /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */,
 			);
-			productRefGroup = 70D0D2D22AD13A0F00CF5256 /* Products */;
+			productRefGroup = 70BCE51D2B123A07003D5FA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70D0D2D02AD13A0F00CF5256 /* School Diary */,
+				70BCE51B2B123A07003D5FA4 /* School Diary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		70D0D2CF2AD13A0F00CF5256 /* Resources */ = {
+		70BCE51A2B123A07003D5FA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				706538162AD13AD40009163A /* SchoolDiaryUIComponents in Resources */,
-				70D0D2E12AD13A1000CF5256 /* LaunchScreen.storyboard in Resources */,
-				70D0D2DE2AD13A1000CF5256 /* Assets.xcassets in Resources */,
-				7088C0FB2AD1407D004D9A50 /* LuckiestGuy-Regular.ttf in Resources */,
-				70D0D2DC2AD13A0F00CF5256 /* Main.storyboard in Resources */,
+				70F9C09C2B12B1770023370A /* SFMono-Regular.otf in Resources */,
+				70BCE57E2B123DBF003D5FA4 /* SchoolDiaryUIComponents in Resources */,
+				70BCE52C2B123A08003D5FA4 /* LaunchScreen.storyboard in Resources */,
+				70BCE5292B123A08003D5FA4 /* Assets.xcassets in Resources */,
+				70BCE5CA2B123F11003D5FA4 /* LuckiestGuy-Regular.ttf in Resources */,
+				70BCE5272B123A07003D5FA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7088C0F82AD13BFA004D9A50 /* ShellScript */ = {
+		700BE8B82B1BF46D0082E05C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,71 +763,97 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		70D0D2CD2AD13A0F00CF5256 /* Sources */ = {
+		70BCE5182B123A07003D5FA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C0BED82AF7BB730057D6F3 /* ResponseAccessTokenModel.swift in Sources */,
-				707FFB0C2B1139180079B3CF /* PupilViewController.swift in Sources */,
-				707FFB0E2B113ADD0079B3CF /* LocalTeacherModel.swift in Sources */,
-				707FFB102B113CE70079B3CF /* PupilPresenter.swift in Sources */,
-				70D0D2D52AD13A0F00CF5256 /* AppDelegate.swift in Sources */,
-				707FFB242B114B070079B3CF /* Date+Ext.swift in Sources */,
-				70DB3A652AF7C6B9003B3E3F /* BaseKeychainModel.swift in Sources */,
-				707FFB192B1144880079B3CF /* UICollectionViewCell+Ext.swift in Sources */,
-				70DB3A5C2AF7C576003B3E3F /* RealmManager.swift in Sources */,
-				7088C1072AD14897004D9A50 /* MainCoordinator.swift in Sources */,
-				70DB3A822AF7E88F003B3E3F /* TeacherViewController.swift in Sources */,
-				707FFB072B1138400079B3CF /* ResponseTeacherInfoModel.swift in Sources */,
-				70DB3A782AF7D5B6003B3E3F /* UserSettingsTableHeaderView.swift in Sources */,
-				707FFB172B11436A0079B3CF /* TimetableCollectionViewCell.swift in Sources */,
-				70DB3A732AF7D20D003B3E3F /* UIViewController+Ext.swift in Sources */,
-				70DB3A622AF7C5D4003B3E3F /* LocalUserModel.swift in Sources */,
-				70DB3A852AF7EBD2003B3E3F /* TeacherInfoView.swift in Sources */,
-				707FFB1F2B1145F90079B3CF /* TimetablePresenter.swift in Sources */,
-				7088C1092AD19484004D9A50 /* SignControllerType.swift in Sources */,
-				70DB3A6D2AF7CBCE003B3E3F /* UserViewController.swift in Sources */,
-				706538112AD13A9B0009163A /* SignViewController.swift in Sources */,
-				70DB3A712AF7CBF4003B3E3F /* UserInfoView.swift in Sources */,
-				707FFB1D2B1145210079B3CF /* TimetableDaysType.swift in Sources */,
-				70DB3A532AF7C33B003B3E3F /* RoleType.swift in Sources */,
-				707FFB092B1138DA0079B3CF /* PupilTabBarController.swift in Sources */,
-				70C0BED42AF7BAFB0057D6F3 /* ResponseSignInModel.swift in Sources */,
-				70C0BED12AF7B3D50057D6F3 /* SchoolsDiaryApi.swift in Sources */,
-				70D0D2D72AD13A0F00CF5256 /* SceneDelegate.swift in Sources */,
-				706538132AD13AA20009163A /* SignPresenter.swift in Sources */,
-				70DB3A682AF7C6EA003B3E3F /* Credentials.swift in Sources */,
-				707FFB222B1147F50079B3CF /* WeekDaysView.swift in Sources */,
-				70DB3A7C2AF7D749003B3E3F /* SettingsTableViewCell.swift in Sources */,
-				70C0BEDA2AF7BBAC0057D6F3 /* SchoolsDiaryProvider.swift in Sources */,
-				70DB3A6A2AF7C70C003B3E3F /* Account.swift in Sources */,
-				70DB3A5F2AF7C59C003B3E3F /* SettingsManager.swift in Sources */,
-				70C0BED62AF7BB3C0057D6F3 /* ResponseUserModel.swift in Sources */,
-				7088C0FF2AD140BD004D9A50 /* UIFont+Ext.swift in Sources */,
-				70DB3A7F2AF7E819003B3E3F /* TeacherTabBarController.swift in Sources */,
-				7088C1022AD143B2004D9A50 /* Constants.swift in Sources */,
-				707FFB032B1137CD0079B3CF /* ResponseUserBaseModel.swift in Sources */,
-				707FFB132B11400A0079B3CF /* TimetableViewController.swift in Sources */,
-				707FFB1B2B1144970079B3CF /* UICollectionView+Ext.swift in Sources */,
-				70DB3A762AF7D397003B3E3F /* SettingsViewController.swift in Sources */,
+				70A72CA02B1CE89E00771881 /* MarksPresenter.swift in Sources */,
+				700C5D7B2B1292F500A6F445 /* ResponseLessonsModel.swift in Sources */,
+				70BCE5612B123D44003D5FA4 /* TimetableDaysType.swift in Sources */,
+				70A72C8C2B1CC9F800771881 /* SubjectMarksTableViewCell.swift in Sources */,
+				70BCE5A92B123DF2003D5FA4 /* SignControllerType.swift in Sources */,
+				70BCE5AB2B123DF2003D5FA4 /* SignPresenter.swift in Sources */,
+				70BCE55A2B123D2F003D5FA4 /* ResponseUserBaseModel.swift in Sources */,
+				70BCE5AD2B123DF2003D5FA4 /* QRScannerViewController.swift in Sources */,
+				70BCE5702B123D6D003D5FA4 /* BaseKeychainModel.swift in Sources */,
+				70BCE5592B123D2F003D5FA4 /* ResponseAccessTokenModel.swift in Sources */,
+				70BCE55D2B123D2F003D5FA4 /* SchoolsDiaryApi.swift in Sources */,
+				70BCE5B72B123DF2003D5FA4 /* UserSettingsTableHeaderView.swift in Sources */,
+				70BCE57B2B123DAD003D5FA4 /* MainCoordinator.swift in Sources */,
+				700C5D832B12ABDC00A6F445 /* ScheduleTableHeaderView.swift in Sources */,
+				70BCE5562B123D2F003D5FA4 /* SchoolsDiaryProvider.swift in Sources */,
+				70BCE5772B123D7D003D5FA4 /* LocalUserModel.swift in Sources */,
+				70A72C9E2B1CE75800771881 /* MarksTableHeaderView.swift in Sources */,
+				700C5D802B12A91E00A6F445 /* ScheduleTableViewCell.swift in Sources */,
+				70A72C872B1CB2EC00771881 /* ChooseMarkViewController.swift in Sources */,
+				70BCE56C2B123D62003D5FA4 /* Account.swift in Sources */,
+				70BCE5AE2B123DF2003D5FA4 /* TimetablePresenter.swift in Sources */,
+				7054A4B02B124BAE00F39B6D /* ResponseBaseContentModel.swift in Sources */,
+				70F9C09E2B12B7450023370A /* SchedulePresenter.swift in Sources */,
+				70BCE5C72B123DFC003D5FA4 /* UIViewController+Ext.swift in Sources */,
+				70BCE5682B123D55003D5FA4 /* Constants.swift in Sources */,
+				70BCE5622B123D44003D5FA4 /* RoleType.swift in Sources */,
+				70BCE5782B123D7D003D5FA4 /* LocalTeacherModel.swift in Sources */,
+				70BCE5B02B123DF2003D5FA4 /* TeacherViewController.swift in Sources */,
+				70BCE5582B123D2F003D5FA4 /* ResponseTeacherInfoModel.swift in Sources */,
+				70A72C8A2B1CB42100771881 /* MarkCollectionViewCell.swift in Sources */,
+				70BCE5B22B123DF2003D5FA4 /* PupilViewController.swift in Sources */,
+				70BCE5A82B123DF2003D5FA4 /* TimetableCollectionViewCell.swift in Sources */,
+				700C602B2B17F3EF00261FB4 /* LessonInfoViewController.swift in Sources */,
+				70BCE5B52B123DF2003D5FA4 /* TeacherInfoView.swift in Sources */,
+				70BCE5C52B123DFC003D5FA4 /* UIFont+Ext.swift in Sources */,
+				70BCE5B32B123DF2003D5FA4 /* UserViewController.swift in Sources */,
+				70BCE5762B123D7D003D5FA4 /* RealmManager.swift in Sources */,
+				70BCE56D2B123D62003D5FA4 /* Credentials.swift in Sources */,
+				70BCE5B82B123DF2003D5FA4 /* TeacherTabBarController.swift in Sources */,
+				700BE8C32B1C98410082E05C /* MarkType.swift in Sources */,
+				70BCE5B12B123DF2003D5FA4 /* PupilPresenter.swift in Sources */,
+				700BE8BF2B1C8FB90082E05C /* LessonMarksPresenter.swift in Sources */,
+				700BE8C12B1C95030082E05C /* PupilMarkTableViewCell.swift in Sources */,
+				70BCE5572B123D2F003D5FA4 /* ResponseUserModel.swift in Sources */,
+				70BCE5C62B123DFC003D5FA4 /* UICollectionViewCell+Ext.swift in Sources */,
+				70A72C802B1C9CFA00771881 /* LessonType.swift in Sources */,
+				70A72C822B1CA12F00771881 /* ResponseShortUserInfoModel.swift in Sources */,
+				700C5D7E2B12940800A6F445 /* ScheduleViewController.swift in Sources */,
+				700BE8BD2B1C8FB40082E05C /* LessonMarksViewController.swift in Sources */,
+				70BCE5B42B123DF2003D5FA4 /* UserInfoView.swift in Sources */,
+				70BCE5652B123D4C003D5FA4 /* SettingsManager.swift in Sources */,
+				70A72C842B1CA17600771881 /* ResponsePupilsModel.swift in Sources */,
+				70BCE5C22B123DFC003D5FA4 /* Date+Ext.swift in Sources */,
+				70BCE55B2B123D2F003D5FA4 /* ResponseSignInModel.swift in Sources */,
+				70BCE5AC2B123DF2003D5FA4 /* SettingsViewController.swift in Sources */,
+				70A72C8F2B1CCA9800771881 /* ResponseSubjectMarkModel.swift in Sources */,
+				700C5D792B1292CC00A6F445 /* ResponseLessonModel.swift in Sources */,
+				70BCE5A72B123DF2003D5FA4 /* SettingsTableViewCell.swift in Sources */,
+				70BCE5202B123A07003D5FA4 /* AppDelegate.swift in Sources */,
+				70BCE5C42B123DFC003D5FA4 /* UICollectionView+Ext.swift in Sources */,
+				700C60282B17C73600261FB4 /* ResponseHometaskModel.swift in Sources */,
+				70BCE5222B123A07003D5FA4 /* SceneDelegate.swift in Sources */,
+				70BCE5AA2B123DF2003D5FA4 /* SignViewController.swift in Sources */,
+				700BE8BA2B1C05600082E05C /* ScheduleMenuType.swift in Sources */,
+				70BCE5B92B123DF2003D5FA4 /* PupilTabBarController.swift in Sources */,
+				70A72C912B1CCAEA00771881 /* ResponseSubjectMarksModel.swift in Sources */,
+				70A72C942B1CE39100771881 /* MarksViewController.swift in Sources */,
+				70BCE5C32B123DFC003D5FA4 /* UIImageView+Ext.swift in Sources */,
+				70BCE5AF2B123DF2003D5FA4 /* TimetableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70D0D2DA2AD13A0F00CF5256 /* Main.storyboard */ = {
+		70BCE5252B123A07003D5FA4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				70D0D2DB2AD13A0F00CF5256 /* Base */,
+				70BCE5262B123A07003D5FA4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		70D0D2DF2AD13A1000CF5256 /* LaunchScreen.storyboard */ = {
+		70BCE52A2B123A08003D5FA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				70D0D2E02AD13A1000CF5256 /* Base */,
+				70BCE52B2B123A08003D5FA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -629,10 +861,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		70D0D2E32AD13A1000CF5256 /* Debug */ = {
+		70BCE52E2B123A08003D5FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -665,7 +898,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -679,20 +913,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		70D0D2E42AD13A1000CF5256 /* Release */ = {
+		70BCE52F2B123A08003D5FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -725,7 +961,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -733,17 +970,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		70D0D2E62AD13A1000CF5256 /* Debug */ = {
+		70BCE5312B123A08003D5FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -751,14 +988,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3SYA5J8W7U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "School Diary/Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -775,7 +1011,7 @@
 			};
 			name = Debug;
 		};
-		70D0D2E72AD13A1000CF5256 /* Release */ = {
+		70BCE5322B123A08003D5FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -783,14 +1019,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3SYA5J8W7U;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "School Diary/Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -810,20 +1045,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70D0D2CC2AD13A0F00CF5256 /* Build configuration list for PBXProject "School Diary" */ = {
+		70BCE5172B123A07003D5FA4 /* Build configuration list for PBXProject "School Diary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70D0D2E32AD13A1000CF5256 /* Debug */,
-				70D0D2E42AD13A1000CF5256 /* Release */,
+				70BCE52E2B123A08003D5FA4 /* Debug */,
+				70BCE52F2B123A08003D5FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70D0D2E52AD13A1000CF5256 /* Build configuration list for PBXNativeTarget "School Diary" */ = {
+		70BCE5302B123A08003D5FA4 /* Build configuration list for PBXNativeTarget "School Diary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70D0D2E62AD13A1000CF5256 /* Debug */,
-				70D0D2E72AD13A1000CF5256 /* Release */,
+				70BCE5312B123A08003D5FA4 /* Debug */,
+				70BCE5322B123A08003D5FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -831,14 +1066,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		706538172AD13AE10009163A /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */ = {
+		70BCE57F2B123DE5003D5FA4 /* XCLocalSwiftPackageReference "School Diary/Packages/SchoolDiaryUIComponents" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "School Diary/Packages/SchoolDiaryUIComponents";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		70BCE5332B123A3A003D5FA4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -846,15 +1081,15 @@
 				version = 5.6.0;
 			};
 		};
-		70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */ = {
+		70BCE5382B123A48003D5FA4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kefaxoo/friendly-urlsession";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 5.18.5;
 			};
 		};
-		70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		70BCE53D2B123A6E003D5FA4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
@@ -862,39 +1097,52 @@
 				version = 10.44.0;
 			};
 		};
+		70BCE5422B123A85003D5FA4 /* XCRemoteSwiftPackageReference "friendly-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kefaxoo/friendly-urlsession";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		706538092AD13A700009163A /* SnapKit */ = {
+		70BCE5342B123A3A003D5FA4 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 70BCE5332B123A3A003D5FA4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		7065380B2AD13A700009163A /* SnapKit-Dynamic */ = {
+		70BCE5392B123A48003D5FA4 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 706538082AD13A700009163A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			package = 70BCE5382B123A48003D5FA4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
-		706538182AD13AE10009163A /* SchoolDiaryUIComponents */ = {
+		70BCE53B2B123A48003D5FA4 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70BCE5382B123A48003D5FA4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		70BCE53E2B123A6E003D5FA4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70BCE53D2B123A6E003D5FA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		70BCE5402B123A6E003D5FA4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70BCE53D2B123A6E003D5FA4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		70BCE5432B123A85003D5FA4 /* FriendlyURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70BCE5422B123A85003D5FA4 /* XCRemoteSwiftPackageReference "friendly-urlsession" */;
+			productName = FriendlyURLSession;
+		};
+		70BCE5802B123DE5003D5FA4 /* SchoolDiaryUIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SchoolDiaryUIComponents;
 		};
-		70C0BECE2AF7B3C80057D6F3 /* FriendlyURLSession */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70C0BECD2AF7B3C80057D6F3 /* XCRemoteSwiftPackageReference "friendly-urlsession" */;
-			productName = FriendlyURLSession;
-		};
-		70DB3A562AF7C54E003B3E3F /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		70DB3A582AF7C54E003B3E3F /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70DB3A552AF7C54E003B3E3F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 70D0D2C92AD13A0F00CF5256 /* Project object */;
+	rootObject = 70BCE5142B123A07003D5FA4 /* Project object */;
 }

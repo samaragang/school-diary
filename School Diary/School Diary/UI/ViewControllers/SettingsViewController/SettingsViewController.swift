@@ -102,7 +102,7 @@ extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.id, for: indexPath)
         let type = self.settings[indexPath.row]
-        (cell as? SettingsTableViewCell)?.setupCell(type: type) { switchValue in
+        (cell as? SettingsTableViewCell)?.setupCell(type: type) { _ in
             switch type {
                 case .notifications:
                     break

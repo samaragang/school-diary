@@ -41,10 +41,16 @@ final class SignPresenter: SignPresenterProtocol {
             self.view?.spinner(isShow: true)
             SchoolsDiaryProvider.shared.signIn(email: email, password: password) { [weak self] user in
                 let localUser = LocalUserModel(user: user)
-                RealmManager<LocalUserModel>().write(object: localUser)
+                let realmManager = RealmManager<LocalUserModel>()
+                realmManager.read().forEach({ realmManager.delete(object: $0) })
+                realmManager.write(object: localUser)
                 SettingsManager.shared.account.email = email
                 SettingsManager.shared.account.saveCredentials(Credentials(email: email, password: password))
-                SettingsManager.shared.account.saveAcceessToken(Credentials(email: email, accessToken: user.accessToken.accessToken))
+                SettingsManager.shared.account.saveAcceessToken(
+                    Credentials(email: email, accessToken: user.accessToken.accessToken),
+                    expireAt: user.accessToken.expireAt
+                )
+                
                 self?.view?.spinner(isShow: false)
                 MainCoordinator.shared.makeTabBarAsRoot()
             } failure: { [weak self] in
